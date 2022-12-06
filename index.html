@@ -1,0 +1,136 @@
+!<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Idan Hur Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#home" class="nav_link">Home</a></li>
+                    <li class="nav__item"> <a href="#about" class="nav_link">About</a></li>
+                    <li class="nav__item"> <a href="#projects" class="nav_link">Projects</a></li>
+                    <li class="nav__item"> <a href="#education" class="nav_link">Education</a></li>
+                    <li class="nav__item"> <a href="#skills" class="nav_link">Skills</a></li>
+                    
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home"> 
+            <h1 class="section__title section__title--intro">Hey, I am <strong>Idan Hur</strong></h1>
+            <p class="section__subtitle section__subtitle--intro">Software developer</p>
+            <img src="images/user.png" alt="first picture of me" class="intro__img">
+        </section>
+
+
+
+        <!-- Projects -->
+        <section class="my_projects" id="projects" >
+            <h2 class="section__title section__title--projects">Projects</h2>
+            <div class="projects">
+                <div class="project"> 
+                    <h3>Trip Management Application</h3>
+                    <p>An application that plans a traveling itinerary for the user based on his favorite places on Google maps! <br>
+                        Each route is calculated by the locations of the user's favorite places, and approximately by the time it will take to visit them.<br>
+                        Utilizing PostgreSQL for the relational dataset, RESTful API, CRUD, JUnit tests, and much more! </p>
+                </div>  <!-- / project -->
+                <div class="project"> 
+                    <h3>Battleship Game</h3>
+                    <p>Designed and developed Battleship game utilizing Client-Server architecture,<br>supports multiples clients at the same time, utilizing JSON for communication between the clients and the server, implemented Gui interface using TKinter and pygame</p>
+                </div>  <!-- / project -->
+                <div class="project"> 
+                    <h3>Tv Show runtime</h3>
+                    <p>Linux application that gets a list of tv shows name and using an HTTP GET request and receives a JSON containing all the episodes of that show and calculates its runtime, the application uses parallel computing calls to get each tv show runtime faster and it returns the tv shows with the longest and shortest runtime.</p>
+                </div>  <!-- / project -->
+            </div><!-- / projects -->
+
+            <a href="work" class="btn">My work</a>
+        </section>
+
+        <!-- About me -->
+
+        <section class="about-me" id="about"> 
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__ubtitle--about"></p>
+
+            <div class="about-me__body">
+                <p></p>
+                <p></p>
+            </div>
+            <img src="images/work-1.png" alt="secand image of me">
+        </section>
+
+        <!-- Education -->
+        <section class="my-education" id="education">
+            <h2 class="section__title">Education</h2>
+            <p class="section__subtitle"></p>
+
+            <div class="container left">
+                <div class="content">
+                    <p>2019 – 2023</p>
+                </div>
+                <div class="content">
+                    <p>2012 – 2015</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>Afeka Tel Aviv Academic College of Engineering</h3>
+                    <h4>B.Sc. in Software Engineering, specialization in Machine Learning and AI.</h4>
+                    <p>Participant in the SmartUp program for honor students.</p>
+                </div>
+                <div class="content">
+                    <h3>Amal Multidisciplinary Sciences and Arts Hadera</h3>
+                    <h4>High school education - Specialized in Electronics and Computers</h4>
+                </div>
+              </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="my-skills" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <p class="section__subtitle"></p>
+            <ul>
+                <li>Java</li>
+                <li>C</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Object-Oriented programming</li>
+                <li>Linux environment</li>
+                <li>Restful API</li>
+            </ul>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <a href="mailto:idan12060@gmail.com" class="footer-link">idan12060@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/idan-hur/">linkedin</a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/idanHur">github</a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/idan.hur.5/">facebook</a></li>
+            </ul>
+        </footer>
+
+    </body>
+</html>
