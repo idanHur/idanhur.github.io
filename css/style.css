@@ -87,6 +87,26 @@ strong {font-weight: var(--fw-bold);}
     transform: scale(1.1);
 }
 
+.btn__resume {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    margin-top: 2em;
+}
+
+.btn__resume:hover{
+    transform: scale(1.1);
+}
+
+
 /* Typography */
 h1,
 h2,
@@ -237,6 +257,13 @@ header {
 
 /* intro section */
 .intro {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro__grid {
     position: relative;
 }
 
@@ -245,7 +272,7 @@ header {
 }
 
 @media (min-width: 600px) {
-    .intro {
+    .intro__grid {
         display: grid;
         width: min-content;
         margin: 0 auto;
@@ -271,7 +298,6 @@ header {
         width: calc(100% + 1.5em);
     }
 }
-
 
 /*  My Projects */
 .my_projects {
@@ -361,6 +387,98 @@ header {
         z-index: 2;
     }
 }
+
+/* Education */
+
+.section__title {
+    text-align: center;
+}
+
+.section__title::after {
+    content: '';
+    display: block;
+    width: 2.5em;
+    height: 2px;
+    margin: 0.1em auto 0.2em;
+    background: var(--clr-accent);
+    opacity: 0.25;
+}
+
+.education-timeline {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+}
+
+.education-timeline__component {
+    margin: 0 20px 20px 30px;
+    padding-bottom: 2em;
+}
+.education-timeline__content {
+    padding: 1.5em;
+    /* background: rgba(235, 233, 233, 0.1); */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.education-timeline__content:hover{
+    transform: scale(1.1);
+}
+
+.education-timeline__date {
+    text-align: right;
+    font-weight: var(--fw-bold);
+    padding: 0 1.5em;
+}
+
+.education-timeline__date .text {
+    margin: 0;
+}
+
+.education-timeline__middle {
+    position: relative;
+    background: var(--clr-accent);
+}
+.education-timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr-accent);
+    border-radius: 50%;
+}
+.education-timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+}
+
+/* Skills */
+
+.skills__list {
+    /* max-width: 550px; */
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.skill__item {
+    margin: 0 .5em;
+    padding: .4em;
+    min-width: 50px;
+    text-align: center;
+    font-weight: var(--fw-bold);
+    background: rgba(235, 233, 233, 0.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
 
 /* footer */
 
