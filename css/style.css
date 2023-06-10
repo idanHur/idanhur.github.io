@@ -354,11 +354,11 @@ header {
 @media (min-width: 600px) {
     .experience {
         display: grid; /* Using CSS Grid for layout */
-        grid-template-columns: 1fr 1fr; /* Dividing the grid into two columns of equal width */
+        grid-template-columns: 1fr 200px; /* Dividing the grid into two columns of equal width */
         grid-template-areas: 
-        "title title"
-        "subtitle subtitle"
-        "text text"; /* Defining grid areas for title, subtitle and text */
+        "title"
+        "subtitle"
+        "text"; /* Defining grid areas for title, subtitle and text */
         grid-column-gap: 2em; /* Setting the gap between the grid columns */
     }
     
@@ -368,6 +368,14 @@ header {
 
     .section__subtitle--experience {
         grid-area: subtitle; /* Assigning the 'subtitle' grid area to .section__subtitle--experience */
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        height: fit-content;
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
     }
 
     .experience__body {
