@@ -344,6 +344,36 @@ header {
         margin-left: 2em;
     }
 }
+/* Experience  */
+.experience {
+    max-width: 1000px; /* Restricting max width of the content */
+    margin: 0 auto; /* Centering the content horizontally */
+}
+
+@media (min-width: 600px) { /* Applies the following styles only for viewports 600px and larger */
+    .experience {
+        display: grid; /* Setting the layout as grid */
+        grid-template-columns: 1fr 200px; /* Creating two columns, one taking up the available space and the other of fixed 200px */
+        grid-template-areas: 
+        "title"
+        "subtitle"
+        "text"; /* Creating areas to assign to specific elements */
+        grid-column-gap: 2em; /* Adding gap between the columns */
+    }
+    
+    /* Assigning grid areas to specific elements */
+    .section__title--experience {
+        grid-area: title; /* Assigning the title to its grid area */
+    }
+    .section__subtitle--experience {
+        grid-area: subtitle; /* Assigning the subtitle to its grid area */
+    }
+
+    .experience__body {
+        grid-area: text; /* Assigning the text to its grid area */
+    }
+}
+
 
 /* About me  */
 
