@@ -142,7 +142,26 @@ h3 {font-size: var(--fs-h3);}
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
+/* Container for job title and duration */
+.section__subtitle--experience-description {
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+    background: var(--clr-accent);
+    padding: .25em 0.5em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
 
+/* Job title and duration */
+.section__subtitle--job-title,
+.section__subtitle--job-duration {
+    margin: 0;
+}
+.section__subtitle--job-duration {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+}
 
 /* header */
 
@@ -344,7 +363,9 @@ header {
         margin-left: 2em;
     }
 }
-/* Experience  */
+
+
+/* Experience */
 .experience {
     max-width: 1000px; /* Restricting max width of the content */
     margin: 0 auto; /* Centering the content horizontally */
@@ -366,22 +387,28 @@ header {
         grid-area: title; /* Assigning the 'title' grid area to .section__title--experience */
     }
 
-    .section__subtitle--experience {
-        grid-area: subtitle; /* Assigning the 'subtitle' grid area to .section__subtitle--experience */
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        height: fit-content;
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
+    /* Modify this part to place both job title and duration into the same grid area */
+    .section__subtitle--experience-description {
+        grid-area: subtitle;
+        display: flex;
+        flex-direction: column;
+        align-items: start; 
+        background: var(--clr-accent);
+        padding: .25em 0.5em;
+        font-family: var(--ff-secondary);
+        margin-bottom: 1em;
     }
 
-    .experience__body {
+    .section__subtitle--job-title,
+    .section__subtitle--job-duration {
+        margin: 0;
+    }
+
+    .experience__body{
         grid-area: text; /* Assigning the 'text' grid area to .experience__body */
     }
 }
+
 
 
 /* About me  */
