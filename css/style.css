@@ -136,22 +136,14 @@ h3 {font-size: var(--fs-h3);}
 }
 
 .section__subtitle--intro,
+.section__subtitle--experience-description,
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 0.5em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
-/* Container for job title and duration */
-.section__subtitle--experience-description {
-    display: flex;
-    flex-direction: column;
-    align-items: start; 
-    background: var(--clr-accent);
-    padding: .25em 0.5em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-}
+
 
 /* Job title and duration */
 .section__subtitle--job-title,
@@ -371,43 +363,73 @@ header {
     margin: 0 auto; /* Centering the content horizontally */
 }
 
+.HTVet__img {
+    box-shadow: var(--bs);
+}
+
 /* Media query for screen sizes of 600px and above */
 @media (min-width: 600px) {
+    /* Configure grid layout for experience section */
     .experience {
-        display: grid; /* Using CSS Grid for layout */
-        grid-template-columns: 1fr 200px; /* Dividing the grid into two columns of equal width */
+        display: grid; /* Enable grid layout */
         grid-template-areas: 
         "title"
-        "subtitle"
-        "text"; /* Defining grid areas for title, subtitle and text */
-        grid-column-gap: 2em; /* Setting the gap between the grid columns */
+        "component"; /* Assign areas for title and component */
+        grid-column-gap: 2em; /* Set the gap between grid columns */
+    }
+
+    /* Assign grid area for experience title */
+    .section__title--experience {
+        grid-area: title; /* Place the title in the 'title' grid area */
+    }
+
+    /* Assign grid area for experience component */
+    .section__subtitle--experience__component {
+        grid-area: component; 
+        display: grid; /* Enable grid layout for the component */
+        grid-template-columns: 1fr 220px; /* Define two columns, with the image in the second column */
+        grid-template-areas:
+        "job-title img"
+        "job-duration img"
+        "experience__body img"; /* Assign areas for job-title, job-duration, experience__body, and img */
+        grid-gap: 0.25em; /* Set the gap between grid items */
+    }
+    .section__subtitle--experience-description {
+        grid-column: 1 / -1; /* Span across all columns within its grid container */
+        grid-row: 2; /* Positioned in the second row of the grid */
+        position: relative; /* Positioned relative to its normal position */
+        left: -1em; /* Shift the element 1em to the left */
+        width: calc(100% + 2em); /* Calculate width as 100% of parent container's width + 2em */
+        height: fit-content; /* Adjust height based on the content within the element */
+        margin-top: 1em; /* Add 1em of margin on the top of the element */
+        padding-left: 1em; /* Add 1em of padding on the left side of the element */
+        padding-right: calc(200px + 4em); /* Calculate right padding as 200px + 4em */
     }
     
-    .section__title--experience {
-        grid-area: title; /* Assigning the 'title' grid area to .section__title--experience */
+    /* Assign grid area for job title */
+    .section__subtitle--job-title {
+        grid-area: job-title; /* Place the job title in the 'job-title' grid area */
     }
 
-    /* Modify this part to place both job title and duration into the same grid area */
-    .section__subtitle--experience-description {
-        grid-area: subtitle;
-        display: flex;
-        flex-direction: column;
-        align-items: start; 
-        background: var(--clr-accent);
-        padding: .25em 0.5em;
-        font-family: var(--ff-secondary);
-        margin-bottom: 1em;
-    }
-
-    .section__subtitle--job-title,
+    /* Assign grid area for job duration */
     .section__subtitle--job-duration {
-        margin: 0;
+        grid-area: job-duration; /* Place the job duration in the 'job-duration' grid area */
     }
 
-    .experience__body{
-        grid-area: text; /* Assigning the 'text' grid area to .experience__body */
+    /* Assign grid area for experience body */
+    .experience__body {
+        grid-area: experience__body; /* Place the experience body in the 'experience__body' grid area */
+    }
+
+    /* Add CSS for experience image */
+    .HTVet__img {
+        grid-area: img; /* Assign the 'img' grid area to .HTVet__img */
+        position: relative; /* Make the position of the image relative to its normal position */
+        z-index: 2; /* Layer the image above other elements */
     }
 }
+
+
 
 
 
