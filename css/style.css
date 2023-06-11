@@ -547,25 +547,28 @@ header {
 /* Skills */
 
 .skills__list {
-    /* max-width: 550px; */
-    
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to a new line on small screens */
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 2em auto 0; /* Center the list horizontally */
     padding: 0;
+    max-width: 1000px; /* Set a maximum width for the container */
 }
 
 .skill__item {
-    margin: 0 .5em;
-    padding: .4em;
+    margin: 0.5em;
+    padding: 0.4em;
     min-width: 50px;
     text-align: center;
     font-weight: var(--fw-bold);
     background: rgba(235, 233, 233, 0.05);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    flex-grow: 1; /* Allow items to grow and occupy more space */
 }
+
+
 
 
 /* footer */
