@@ -1,0 +1,44 @@
+import AnimatedText from '@/components/AnimatedText'
+import Layout from '@/components/Layout'
+import Head from 'next/head'
+import Image from 'next/image'
+import React from 'react'
+import profilePic from '../../public/images/profile/home-img.JPG'
+const about = () => {
+  return (
+    <>
+        <Head>
+            <title>Idan Hur | About Page</title>
+            <meta name='description' content='Idan Hur - Backend Developer with 
+            expertise in C#, Python, Java, and more. Experienced in Android/Linux 
+            development, software integration, and web development. Explore my resume,
+            projects, and professional journey.'/>
+        </Head>
+        <main className='flex w-full flex-col items-center justify-center'>
+            <Layout className='pt-16'>
+                <AnimatedText text="Passion Fuels Purpose! " className='mb-16'/>
+                <div className='grid w-full grid-cols-8 gap-16'>
+                    <div className='col-span-3 flex flex-col items-start justify-start'>
+                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>About Me</h2>
+                        <p className='font-medium mb-4'>
+                            Hello, I'm Idan Hur, a dedicated Backend Developer with a passion for innovation. I graduated Cum Laude from Afeka Tel Aviv Academic College of Engineering, earning a B.Sc. in Software Engineering with a focus on Machine Learning and AI. My expertise encompasses a range of programming languages, including C#, Python, and Java, and I've further honed my skills in APIs, databases, and data structures.
+                        </p>
+                        <p className='font-medium'>
+                            During my time at HtVet, I led development and integration for Android and Linux systems, deepening my understanding of embedded systems. I'm not just technically proficient; I'm a quick learner with a drive to contribute to groundbreaking backend projects. As the tech industry continues to evolve, I'm eager to collaborate with forward-thinking companies and make a lasting impact.
+                        </p>
+                    </div>
+                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid
+                     border-dark bg-light p-8'>
+                        <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+                        <Image src={profilePic} alt='IdanHur' className='w-full h-auto rounded-2xl'/>
+                    </div>
+                    
+                </div>
+            </Layout>
+        </main>
+
+    </>
+  )
+}
+
+export default about
