@@ -23,11 +23,11 @@ const CustomLink = ({href, title, className=""}) => {
 const NavBar = () => {
   return (
     <header
-    className='w-full px-32 py-8 font-medium flex items-center justify-between'>
+    className='w-full px-4 md:px-32 py-8 font-medium flex items-center justify-between'>
       <nav>
-        <CustomLink href='/' title="Home" className='mr-4'/>
+        <CustomLink href='/' title="Home" className='md:mr-4'/>
         <CustomLink href='/about' title="About" className='mx-4'/>
-        <CustomLink href='/projects' title="Projects" className='ml-4'/>
+        <CustomLink href='/projects' title="Projects" className='md:ml-4'/>
       </nav>
 
       <nav className='flex items-center justify-center flex-wrap'>
@@ -46,7 +46,7 @@ const NavBar = () => {
         </motion.a>
       </nav>
 
-      <div className='absolute left-[50%] top-2 translate-x-[50%]'>
+      <div className='absolute left-[50%] top-2 md:translate-x-[50%]'>
         <Logo />
       </div>
     </header>
