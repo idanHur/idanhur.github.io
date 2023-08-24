@@ -4,21 +4,23 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className='w-full border-t-2 border-solid border-dark
-    font-medium text-lg
-    '>
-      <Layout className='py-8 flex items-center justify-between'>
-        <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
-        <div className='flex items-center'>
-          <p className='underline
-          underline-offset-2'>
+    <footer className='w-full border-t-2 border-solid border-dark 
+    font-medium text-lg'>
+      <Layout className='py-2 flex flex-col md:flex-row items-center 
+      justify-between md:p-6'> 
+        <span className='mb-2 md:mb-0'>
+          {new Date().getFullYear()} &copy; All Rights Reserved
+          </span>
+
+        <div className='flex items-center mb-2 md:mb-0'>
+          <p className='underline underline-offset-2'>
             Idan Hur
-            </p>
+          </p>
         </div>
-        <Link href="mailto:idan12060@gmail.com" target='_blank' className='underline
-          underline-offset-2'>
-            Say Hello
-            </Link>
+        
+        <Link href="mailto:idan12060@gmail.com" target='_blank' className='underline underline-offset-2'>
+          Say Hello
+        </Link>
       </Layout>
     </footer>
   )
