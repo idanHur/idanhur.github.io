@@ -15,10 +15,10 @@ const about = () => {
             projects, and professional journey.'/>
         </Head>
         <main className='flex w-full flex-col items-center justify-center'>
-            <Layout className='pt-4 md:pt-16'>
-                <AnimatedText text="Passion Fuels Purpose! " className='mb-2 md:mb-16'/>
-                <div className='grid w-full grid-cols-1 md:grid-cols-8 gap-16'>
-                    <div className='col-span-1 md:col-span-3 flex flex-col items-start justify-start'>
+            <Layout className='pt-4 md:pt-8 lg:pt-16 '>
+                <AnimatedText text="Passion Fuels Purpose! " className='mb-2 md:mb-16 xl:mb-20 2xl:mb-32'/>
+                <div className='grid w-full grid-cols-1 xl:grid-cols-8 gap-16'>
+                    <div className='col-span-1 xl:col-span-3 flex flex-col items-start justify-start'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/80'>About Me</h2>
                         <p className='font-medium mb-4'>
                             Hello, I'm Idan Hur, a dedicated Backend Developer with a passion for innovation. I graduated Cum Laude from Afeka Tel Aviv Academic College of Engineering, earning a B.Sc. in Software Engineering with a focus on Machine Learning and AI. My expertise encompasses a range of programming languages, including C#, Python, and Java, and I've further honed my skills in APIs, databases, and data structures.
@@ -27,7 +27,7 @@ const about = () => {
                             During my time at HtVet, I led development and integration for Android and Linux systems, deepening my understanding of embedded systems. I'm not just technically proficient; I'm a quick learner with a drive to contribute to groundbreaking backend projects. As the tech industry continues to evolve, I'm eager to collaborate with forward-thinking companies and make a lasting impact.
                         </p>
                     </div>
-                    <div className='col-span-1 md:col-span-3 flex justify-center items-center'>
+                    <div className='col-span-1 xl:col-span-3 flex justify-center items-center'>
                         <div className='relative h-max rounded-2xl border-2 border-solid
                         border-dark bg-light p-8 max-w-[600px] max-h-[800px]'>
                             <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
@@ -36,15 +36,15 @@ const about = () => {
                     </div>
                     
 
-                    <div className='col-span-1 md:col-span-2 flex flex-col items-end justify-between'>
-                        <div className='flex flex-col items-end justify-center pb-8'>
+                    <div className='col-span-1 xl:col-span-2 flex flex-col items-center xl:items-end justify-between'>
+                        <div className='flex flex-col items-center xl:items-end justify-center pb-8'>
                             <span className='inline-block text-2xl font-bold'>
                                 Software Engineering Graduate 
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75'>
                                 GPA 88</h2>
                         </div>
-                        <div className='flex flex-col items-end justify-center'>
+                        <div className='flex flex-col items-center xl:items-end justify-center'>
                             <span className='inline-block text-2xl font-bold'>
                                 Software Engineering Graduate 
                             </span>

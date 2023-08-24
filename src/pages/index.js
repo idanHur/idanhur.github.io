@@ -19,7 +19,7 @@ export default function Home() {
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className='pt-0'>
           <div className='flex items-center justify-center w-full'>
-            <div className='w-1/2'>
+            <div className='w-1/2 max-w-[600px] max-h-[800px] px-16'>
               <Image src={profilePic} alt="IdanHur" className='w-full h-auto'></Image>
             </div>
             <div className='w-1/2 flex flex-col items-center self-center'>
