@@ -56,6 +56,7 @@ const about = () => {
                     </div>
                 </div>
                 <Skills />
+                <Experience />
             </Layout>
         </main>
 
