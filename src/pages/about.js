@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import profilePic from '../../public/images/profile/home-img.JPG'
 import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
 const about = () => {
   return (
     <>
