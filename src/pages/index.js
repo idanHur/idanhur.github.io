@@ -20,8 +20,8 @@ export default function Home() {
       dark:text-light
       '>
         <Layout className='pt-0'>
-          <div className='flex items-center justify-center w-full'>
-            <div className='w-1/2 px-16'>
+          <div className='flex flex-col lg:flex-row items-center justify-center w-full'>
+            <div className='w-[80%] pb-8 lg:pb-0 lg:w-1/2 px-4 lg:px-16'>
               <Image src={profilePic} alt="IdanHur" className='w-full h-auto'
               priority
               sizes='(max-width: 768px) 100vw, 
@@ -29,15 +29,16 @@ export default function Home() {
               33vw'
               />
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center'>
-              <AnimatedText text="Engineering Software Excellence Through Precision and Innovation." className='!text-6xl !text-left'/>
-              <p className='my-4 text-base font-medium'>
+            <div className='w-full px-4 lg:px-0 lg:w-1/2 flex flex-col items-center self-center'>
+              <AnimatedText text="Engineering Software Excellence Through Precision and Innovation." 
+              className='!text-3xl !text-center lg:!text-left md:!text-5xl lg:!text-6xl'/>
+              <p className='my-4 text-base font-medium text-center lg:text-left'>
                 As a dedicated Software Engineer, I harness a rich palette of programming languages, 
                 frameworks, and tools to breathe life into visionary projects. 
                 Dive into my extensive portfolio, which mirrors my adeptness in C#, Python, Java, and more. 
                 Together, let's sculpt the future of software, one line of code at a time.
               </p>
-              <div className='flex items-center self-start mt-2'>
+              <div className='flex items-center self-center lg:self-start mt-2'>
                 <Link href="/Idan Hur.pdf" target='_blank'
                 className='flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
@@ -56,7 +57,7 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-        <div className='absolute right-8 bottom-8 inline-block w-24'>
+        <div className='absolute right-8 bottom-8 lg:inline-block w-24 hidden'>
           <Image src={lightBulb} alt='IdanHur' className='w-full h-auto' />
         </div>
       </main>
