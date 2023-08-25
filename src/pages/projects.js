@@ -7,6 +7,7 @@ import Link from 'next/link'
 import React from 'react'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
 import { motion } from 'framer-motion'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
@@ -64,6 +65,7 @@ const projects = () => {
             development, software integration, and web development. Explore my resume,
             projects, and professional journey.'/>
         </Head>
+        <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout>
                 <AnimatedText className="!text-4xl lg:!text-6xl mb-8 md:mb-16 " text="Crafted with Passion: A Tour of My Technological Triumphs."/>

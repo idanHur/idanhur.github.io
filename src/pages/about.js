@@ -7,6 +7,7 @@ import profilePic from '../../public/images/profile/home-img.JPG'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
+import TransitionEffect from '@/components/TransitionEffect'
 const about = () => {
   return (
     <>
@@ -17,11 +18,12 @@ const about = () => {
             development, software integration, and web development. Explore my resume,
             projects, and professional journey.'/>
         </Head>
+        <TransitionEffect />
         <main className='flex w-full flex-col items-center justify-center
         dark:text-light 
         '>
             <Layout className='pt-4 md:pt-8 lg:pt-16 '>
-                <AnimatedText text="Passion Fuels Purpose! " className='mb-2 md:mb-16 xl:mb-20 2xl:mb-32'/>
+                <AnimatedText text="Passion Fuels Purpose! " className='!text-5xl lg:!text-7xl mb-2 md:mb-16 xl:mb-20 2xl:mb-32'/>
                 <div className='grid w-full grid-cols-1 xl:grid-cols-8 gap-16'>
                     <div className='col-span-1 xl:col-span-3 flex flex-col items-start justify-start'>
                         <h2 className='mb-4 text-lg font-bold uppercase 
