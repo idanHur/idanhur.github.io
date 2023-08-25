@@ -35,8 +35,8 @@ const Education = () => {
         }
     )
   return (
-    <div className='my-64'>
-      <h2 className='font-bold text-7xl md:text-8xl mb-32 w-full text-center'>
+    <div className='my-16 md:my-32 lg:my-48'>
+      <h2 className='font-bold text-6xl md:text-8xl mb-16 md:mb-24 lg:mb-32 w-full text-center'>
         Education
       </h2>
       <div ref={ref} className='w-full md:w-[75%] mx-auto relative'>

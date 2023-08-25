@@ -6,8 +6,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import { motion } from 'framer-motion'
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
+
+    const FramerImage = motion(Image);
 
     return(
         <article className='w-full flex flex-col items-center justify-center
@@ -19,7 +22,9 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                 <Link href={link ? link : github} target='_blank'
                 className='w-full lg:w-auto cursor-pointer overflow-hidden rounded-lg mb-4 lg:mb-0'  // Added mb-4 for spacing on small and medium screens
                 >
-                    <Image src={img} alt={title} className='w-full h-auto' 
+                    <FramerImage src={img} alt={title} className='w-full h-auto' 
+                    whileHover={{scale:1.05}}
+                    transition={{duration:0.2}}
                     priority
                     sizes='(max-width: 768px) 100vw, 
                     (max-width: 1200px) 50vw, 
@@ -30,7 +35,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                     <span className='text-primary font-medium text-xl dark:text-primaryDark'>{type}</span>
                     <Link href={link ? link : github} target='_blank' 
                     className='hover:underline underline-offset-2'>
-                        <h2 className='my-2 w-full text-left text-2xl md:text-4xl font-bold dark:text-light'>{title}</h2>
+                        <h2 className='my-1 lg:my-2 w-full text-left text-2xl lg:text-4xl font-bold dark:text-light'>{title}</h2>
                     </Link>
                 </div>
             </div>
@@ -61,9 +66,9 @@ const projects = () => {
         </Head>
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout>
-                <AnimatedText className="!text-6xl mb-16" text="Crafted with Passion: A Tour of My Technological Triumphs."/>
-                <div className='grid grid-cols-1 md:grid-cols-12 gap-24'>
-                    <div className='col-span-1 md:col-span-6'>
+                <AnimatedText className="!text-4xl lg:!text-6xl mb-8 md:mb-16 " text="Crafted with Passion: A Tour of My Technological Triumphs."/>
+                <div className='grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-24 gap-x-6 md:gap-y-24 lg:gap-x-8 xl:gap-x-16'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         <FeaturedProject 
                             title="Crypto Screener Application"
                             summary="Crypto Screener Application
@@ -76,7 +81,7 @@ const projects = () => {
                             type="Featured Project "
                         />
                     </div>
-                    <div className='col-span-1 md:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         <FeaturedProject 
                                 title="Crypto Screener Application"
                                 summary="Crypto Screener Application
@@ -89,16 +94,16 @@ const projects = () => {
                                 type="Featured Project "
                             />
                     </div>
-                    <div className='col-span-1 md:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         Project-2
                     </div>
-                    <div className='col-span-1 md:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         Featured Project
                     </div>
-                    <div className='col-span-1 md:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         Project-3
                     </div>
-                    <div className='col-span-1 md:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         Project-4
                     </div>
                 </div>
