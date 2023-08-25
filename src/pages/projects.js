@@ -12,7 +12,8 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
     return(
         <article className='w-full flex flex-col items-center justify-center
         rounded-2xl border border-solid border-dark bg-white relative rounded-br-2xl p-6'>
-        <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
+        <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] 
+        bg-dark rounded-br-3xl' />
             <div className='w-full flex flex-col lg:flex-row items-center justify-start'>
                 <Link href={link ? link : github} target='_blank'
                 className='w-full lg:w-auto cursor-pointer overflow-hidden rounded-lg mb-4 lg:mb-0'  // Added mb-4 for spacing on small and medium screens
@@ -69,7 +70,17 @@ const projects = () => {
                         />
                     </div>
                     <div className='col-span-1 md:col-span-6'>
-                        Project-1
+                        <FeaturedProject 
+                                title="Crypto Screener Application"
+                                summary="Crypto Screener Application
+                                A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                                local currency."
+                                link="/"
+                                img= {project1}
+                                github="/"
+                                type="Featured Project "
+                            />
                     </div>
                     <div className='col-span-1 md:col-span-6'>
                         Project-2
