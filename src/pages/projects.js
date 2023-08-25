@@ -11,29 +11,36 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
     return(
         <article className='w-full flex flex-col items-center justify-center
-        rounded-2xl border border-solid border-dark bg-white relative rounded-br-2xl p-6'>
+        rounded-2xl border border-solid border-dark bg-white relative rounded-br-2xl p-6
+        dark:bg-dark dark:text-light dark:border-light'>
         <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] 
-        bg-dark rounded-br-3xl' />
+        bg-dark rounded-br-3xl dark:bg-light' />
             <div className='w-full flex flex-col lg:flex-row items-center justify-start'>
                 <Link href={link ? link : github} target='_blank'
                 className='w-full lg:w-auto cursor-pointer overflow-hidden rounded-lg mb-4 lg:mb-0'  // Added mb-4 for spacing on small and medium screens
                 >
-                    <Image src={img} alt={title} className='w-full h-auto max-w-[400px] max-h-[600px]' />
+                    <Image src={img} alt={title} className='w-full h-auto' 
+                    priority
+                    sizes='(max-width: 768px) 100vw, 
+                    (max-width: 1200px) 50vw, 
+                    33vw'
+                    />
                 </Link>
                 <div className='w-full lg:w-auto flex flex-col items-start justify-between lg:pl-6'>
-                    <span className='text-primary font-medium text-xl'>{type}</span>
+                    <span className='text-primary font-medium text-xl dark:text-primaryDark'>{type}</span>
                     <Link href={link ? link : github} target='_blank' 
                     className='hover:underline underline-offset-2'>
-                        <h2 className='my-2 w-full text-left text-2xl md:text-4xl font-bold'>{title}</h2>
+                        <h2 className='my-2 w-full text-left text-2xl md:text-4xl font-bold dark:text-light'>{title}</h2>
                     </Link>
                 </div>
             </div>
 
-            <p className='my-2 font-medium text-dark'>{summary}</p>
+            <p className='my-2 font-medium text-dark dark:text-light'>{summary}</p>
             <div className='mt-2 flex items-center'>
                 <Link href={github} target='_blank' className='w-10'><GithubIcon /></Link>
                 {link && <Link href={link} target='_blank' 
-                className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'
+                className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
+                dark:bg-light dark:text-dark'
                 >Visit project</Link>}
             </div>
         <div/>
@@ -52,7 +59,7 @@ const projects = () => {
             development, software integration, and web development. Explore my resume,
             projects, and professional journey.'/>
         </Head>
-        <main className='w-full mb-16 flex flex-col items-center justify-center'>
+        <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout>
                 <AnimatedText className="!text-6xl mb-16" text="Crafted with Passion: A Tour of My Technological Triumphs."/>
                 <div className='grid grid-cols-1 md:grid-cols-12 gap-24'>

@@ -10,42 +10,34 @@ const useThemeSwitcher = () => {
         const userPref = window.localStorage.getItem("theme");
 
         const handleChange = () => {
-            if(userPref){
-                let check = userPref === "dark" ? "dark" : "light";
-                setMode(check);
-                if(check==="dark"){
-                    document.documentElement.classList.add("dark")
-                }else{
-                    document.documentElement.classList.remove("dark")
-                }
-            }else{
+            if (userPref) {
+                setMode(userPref);
+            } else {
                 let check = mediaQuery.matches ? "dark" : "light";
                 setMode(check);
-                if(check==="dark"){
-                    document.documentElement.classList.add("dark")
-                }else{
-                    document.documentElement.classList.remove("dark")
-                }
             }
         }
 
-        mediaQuery.removeEventListener("change", handleChange)
+        handleChange();
+
+        mediaQuery.addEventListener("change", handleChange)
 
         return () => mediaQuery.removeEventListener("change", handleChange)
 
     }, [])
 
     useEffect(() => {
-        if(mode === "dark"){
-            window.localStorage.setItem("theme", "dark");
-            document.documentElement.classList.add("dark")
-        }else{
-            window.localStorage.setItem("theme", "light");
-            document.documentElement.classList.remove("dark")
+        if (mode) {
+            window.localStorage.setItem("theme", mode);
+            if (mode === "dark") {
+                document.documentElement.classList.add("dark")
+            } else {
+                document.documentElement.classList.remove("dark")
+            }
         }
     }, [mode])
 
-  return [mode, setMode]
+    return [mode, setMode]
 }
 
 export default useThemeSwitcher
