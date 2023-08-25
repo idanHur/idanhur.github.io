@@ -11,7 +11,8 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
     return(
         <article className='w-full flex flex-col items-center justify-center
-        rounded-2xl border border-solid border-dark bg-white relative p-6'>
+        rounded-2xl border border-solid border-dark bg-white relative rounded-br-2xl p-6'>
+        <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
             <div className='w-full flex flex-col lg:flex-row items-center justify-start'>
                 <Link href={link ? link : github} target='_blank'
                 className='w-full lg:w-auto cursor-pointer overflow-hidden rounded-lg mb-4 lg:mb-0'  // Added mb-4 for spacing on small and medium screens
@@ -22,7 +23,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                     <span className='text-primary font-medium text-xl'>{type}</span>
                     <Link href={link ? link : github} target='_blank' 
                     className='hover:underline underline-offset-2'>
-                        <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
+                        <h2 className='my-2 w-full text-left text-2xl md:text-4xl font-bold'>{title}</h2>
                     </Link>
                 </div>
             </div>
@@ -34,6 +35,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                 className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'
                 >Visit project</Link>}
             </div>
+        <div/>
         </article>
     )
 }
