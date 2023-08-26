@@ -46,19 +46,19 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Function to handle window resize
-  const handleResize = () => {
-    if (window.innerWidth >= 1024 && isOpen) { // 1024px is the breakpoint for 'lg' in Tailwind CSS
-      setIsOpen(false);
-    }
-  };
-
-  // Add event listener on component mount and remove on unmount
   useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024 && isOpen) {
+        setIsOpen(false);
+      }
+    };
+  
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, [isOpen]);
+  
 
   const handleClick = () =>{
     setIsOpen(!isOpen)
