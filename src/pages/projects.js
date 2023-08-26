@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import project4 from "../../public/images/projects/ML-with-the-Titanic-Dataset.png"
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -72,35 +73,51 @@ const projects = () => {
                 <div className='grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-24 gap-x-6 md:gap-y-24 lg:gap-x-8 xl:gap-x-16'>
                     <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         <FeaturedProject 
-                            title="Crypto Screener Application"
-                            summary="Crypto Screener Application
-                            A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                            local currency."
-                            link="/"
+                            title="Connect 4 Game"
+                            summary="The Connect4Game project is a digital version of the classic Connect4, 
+                            built using WPF for the client and ASP.NET Core for the server. The server handles game logic, 
+                            player interactions, and AI strategies, while the client offers a dynamic game board and connects via a Web API. 
+                            With a focus on best coding practices, the project employs MVC and MVVM patterns, ensuring an engaging and seamless gaming experience for Connect4 fans."
                             img= {project1}
-                            github="/"
+                            github="https://github.com/idanHur/ConnectFour"
                             type="Featured Project "
                         />
                     </div>
                     <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         <FeaturedProject 
-                                title="Crypto Screener Application"
-                                summary="Crypto Screener Application
-                                A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency."
+                                title="Trip Management Application"
+                                summary="An application that plans a traveling itinerary for the user based on his favorite places on Google maps!
+                                Each route is calculated by the locations of the user's favorite places, and approximately by the time it will take to visit them.
+                                Utilizing PostgreSQL for the relational dataset, RESTful API, CRUD, JUnit tests, and much more!"
+                                img= {project1}
+                                github="https://github.com/idanHur/Trip-Management-Application"
+                                type="Featured Project "
+                        />
+                    </div>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                        <FeaturedProject 
+                                title="Tv Show runtime"
+                                summary="Linux application that gets a list of tv shows name and using an HTTP GET request and receives a JSON containing all the episodes of that show and calculates its runtime, 
+                                the application uses parallel computing calls to get each tv show runtime faster and it returns the tv shows with the longest and shortest runtime."
                                 link="/"
                                 img= {project1}
-                                github="/"
+                                github="https://github.com/idanHur/tv-show-runtime"
                                 type="Featured Project "
-                            />
+                        />
                     </div>
                     <div className='col-span-1 md:col-span-3 lg:col-span-6'>
-                        Project-2
-                    </div>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
-                        Featured Project
+                        <FeaturedProject 
+                                title="Titanic - Machine Learning from Disaster"
+                                summary="The 'Titanic - Machine Learning from Disaster' project on Kaggle focused on predicting the survival of Titanic passengers. 
+                                Utilizing Python, key libraries like Pandas and Sklearn were employed for data analysis and modeling. The data underwent rigorous preprocessing, 
+                                which included addressing missing values, encoding categorical variables, and feature engineering techniques like extracting the 'Title' from passenger names. 
+                                A heatmap was used to visualize correlations between features, providing insights for model optimization. The primary predictive model was Logistic Regression implemented with the SGD Classifier, 
+                                which was fine-tuned to enhance its accuracy."
+                                link="https://www.kaggle.com/competitions/titanic/data"
+                                img= {project4}
+                                github="https://github.com/idanHur/Titanic/blob/main/Titanic_1.ipynb"
+                                type="Featured Project "
+                        />
                     </div>
                     <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         Project-3
