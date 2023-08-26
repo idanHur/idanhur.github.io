@@ -60,11 +60,9 @@ const about = () => {
                         </div>
                         <div className='flex flex-col items-center xl:items-end justify-center'>
                             <span className='inline-block text-2xl font-bold'>
-                                Software Engineering Graduate 
+                                SmartUp program for honor students 
                             </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>
-                                GPA 88</h2>
-                            {/* TODO: Add something else here */}
+                            
                         </div>
                     </div>
                 </div>
