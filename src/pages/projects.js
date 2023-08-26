@@ -7,6 +7,7 @@ import Link from 'next/link'
 import React from 'react'
 import project1 from "../../public/images/projects/Connect4.jpg"
 import project2 from "../../public/images/projects/Trip-Management-Application.jpg"
+import project3 from "../../public/images/projects/linux.jpg"
 import project4 from "../../public/images/projects/ML-with-the-Titanic-Dataset.png"
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
@@ -100,8 +101,7 @@ const projects = () => {
                                 title="Tv Show runtime"
                                 summary="Linux application that gets a list of tv shows name and using an HTTP GET request and receives a JSON containing all the episodes of that show and calculates its runtime, 
                                 the application uses parallel computing calls to get each tv show runtime faster and it returns the tv shows with the longest and shortest runtime."
-                                link="/"
-                                img= {project1}
+                                img= {project3}
                                 github="https://github.com/idanHur/tv-show-runtime"
                                 type="Featured Project "
                         />
@@ -120,12 +120,7 @@ const projects = () => {
                                 type="Featured Project "
                         />
                     </div>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
-                        Project-3
-                    </div>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
-                        Project-4
-                    </div>
+                    
                 </div>
 
             </Layout>
