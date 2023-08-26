@@ -39,7 +39,8 @@ export default function Home() {
               </p>
               <div className="flex items-center self-center mt-2">
                 <Link href="/Idan Hur.pdf" target="_blank"
-                className="flex items-center bg-dark text-light p-2.5 px-6
+                className="flex items-center bg-dark text-light p-2.5 px-6 
+                max-w-6 max-h-15 md:max-w-none md:max-h-none
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark
