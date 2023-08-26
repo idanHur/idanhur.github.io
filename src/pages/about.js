@@ -30,11 +30,12 @@ const about = () => {
                         text-dark/80 dark:text-light/80 " 
                         >About Me</h2>
                         <p className="font-medium mb-4">
-                            Hello, I'm Idan Hur, a dedicated Backend Developer with a passion for innovation. I graduated Cum Laude from Afeka Tel Aviv Academic College of Engineering, earning a B.Sc. in Software Engineering with a focus on Machine Learning and AI. My expertise encompasses a range of programming languages, including C#, Python, and Java, and I've further honed my skills in APIs, databases, and data structures.
+                            Hello, I&apos;m Idan Hur, a dedicated Backend Developer with a passion for innovation. I graduated Cum Laude from Afeka Tel Aviv Academic College of Engineering, earning a B.Sc. in Software Engineering with a focus on Machine Learning and AI. My expertise encompasses a range of programming languages, including C#, Python, and Java, and I&apos;ve further honed my skills in APIs, databases, and data structures.
                         </p>
                         <p className="font-medium">
-                            During my time at HtVet, I led development and integration for Android and Linux systems, deepening my understanding of embedded systems. I'm not just technically proficient; I'm a quick learner with a drive to contribute to groundbreaking backend projects. As the tech industry continues to evolve, I'm eager to collaborate with forward-thinking companies and make a lasting impact.
+                            During my time at HtVet, I led development and integration for Android and Linux systems, deepening my understanding of embedded systems. I&apos;m not just technically proficient; I&apos;m a quick learner with a drive to contribute to groundbreaking backend projects. As the tech industry continues to evolve, I&apos;m eager to collaborate with forward-thinking companies and make a lasting impact.
                         </p>
+
                     </div>
                     <div className="col-span-1 xl:col-span-3 flex justify-center items-center">
                         <div className="relative h-max rounded-2xl border-2 border-solid
