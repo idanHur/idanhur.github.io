@@ -121,7 +121,10 @@ const projects = () => {
                                 type="Featured Project "
                         />
                     </div>
-                    
+
+                    <div className='col-span-1 md:col-span-6 lg:col-span-12'>
+                        <AnimatedText className="!text-4xl lg:!text-6xl mb-8 md:mb-16 " text="More projects will be uploaded soon!"/>
+                    </div>
                 </div>
 
             </Layout>
