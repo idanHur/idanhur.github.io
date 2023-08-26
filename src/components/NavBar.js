@@ -161,7 +161,7 @@ const NavBar = () => {
         :null
       }
 
-      <div className='absolute left-[50%] top-2 md:translate-x-[50%]'>
+      <div className='absolute left-[50%] top-2 -translate-x-[25%] md:translate-x-[50%]'>
         <Logo />
       </div>
     </header>
