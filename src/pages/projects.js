@@ -5,7 +5,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import project1 from "../../public/images/projects/Connect4.jpg"
+import project2 from "../../public/images/projects/Trip-Management-Application.jpg"
 import project4 from "../../public/images/projects/ML-with-the-Titanic-Dataset.png"
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
@@ -89,7 +90,7 @@ const projects = () => {
                                 summary="An application that plans a traveling itinerary for the user based on his favorite places on Google maps!
                                 Each route is calculated by the locations of the user's favorite places, and approximately by the time it will take to visit them.
                                 Utilizing PostgreSQL for the relational dataset, RESTful API, CRUD, JUnit tests, and much more!"
-                                img= {project1}
+                                img= {project2}
                                 github="https://github.com/idanHur/Trip-Management-Application"
                                 type="Featured Project "
                         />
