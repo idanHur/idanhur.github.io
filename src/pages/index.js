@@ -29,10 +29,10 @@ export default function Home() {
               <AnimatedText text="Engineering Software Excellence Through Precision and Innovation." 
               className="!text-3xl !text-center md:!text-5xl lg:!text-6xl"/>
               <p className="my-4 text-base font-medium text-center ">
-                As a dedicated Software Engineer, I harness a rich palette of programming languages, 
-                frameworks, and tools to breathe life into visionary projects. 
-                Dive into my extensive portfolio, which mirrors my adeptness in C#, Python, Java, and more. 
-                Together, let's sculpt the future of software, one line of code at a time.
+                  As a dedicated Software Engineer, I harness a rich palette of programming languages, 
+                  frameworks, and tools to breathe life into visionary projects. 
+                  Dive into my extensive portfolio, which mirrors my adeptness in C#, Python, Java, and more. 
+                  Together, let&apos;s sculpt the future of software, one line of code at a time.
               </p>
               <div className="flex items-center self-center mt-2">
                 <Link href="/Idan Hur.pdf" target="_blank"
