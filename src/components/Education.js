@@ -9,6 +9,7 @@ const Details =({type, time, place, info}) => {
         items-start justify-between'>
             <LiIcon reference={ref}/>
             <motion.div
+            className='ml-2 md:ml-0'
             initial={{y:50}}
             whileInView={{y:0}}
             transition={{duration:0.5, type:"spring"}}
@@ -36,7 +37,7 @@ const Education = () => {
     )
   return (
     <div className='my-16 md:my-32 lg:my-48'>
-      <h2 className='font-bold text-6xl md:text-8xl mb-16 md:mb-24 lg:mb-32 w-full text-center'>
+      <h2 className='font-bold text-5xl md:text-8xl mb-16 md:mb-24 lg:mb-32 w-full text-center'>
         Education
       </h2>
       <div ref={ref} className='w-full md:w-[75%] mx-auto relative'>
