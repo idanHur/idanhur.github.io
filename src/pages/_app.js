@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
+import ParticlesContainer from '@/components/ParticlesContainer'
 import '@/styles/globals.css'
 import { AnimatePresence } from 'framer-motion'
 import { Montserrat } from "next/font/google"
@@ -19,13 +20,12 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen flex flex-col`}>
+      <main className={`${montserrat.variable} relative font-mont bg-light dark:bg-dark w-full min-h-screen flex flex-col`}>
         <NavBar />
-        <div className="flex-grow">
+        <ParticlesContainer />
           <AnimatePresence mode="wait">
             <Component key={router.asPath} {...pageProps} />
           </AnimatePresence>
-        </div>
         <Footer />
       </main>
     </>
