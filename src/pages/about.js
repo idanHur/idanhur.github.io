@@ -1,13 +1,13 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import Image from 'next/image'
 import React from 'react'
 import profilePic from '../../public/images/profile/home-img.JPG'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import TransitionEffect from '@/components/TransitionEffect'
+import Image from 'next/image'
 const about = () => {
   return (
     <>

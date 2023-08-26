@@ -2,7 +2,6 @@ import AnimatedText from '@/components/AnimatedText'
 import { GithubIcon } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import project1 from "../../public/images/projects/Connect4.jpg"
@@ -11,6 +10,7 @@ import project3 from "../../public/images/projects/linux.jpg"
 import project4 from "../../public/images/projects/ML-with-the-Titanic-Dataset.png"
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
+import Image from 'next/image'
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
 

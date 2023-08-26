@@ -1,13 +1,11 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import Image from 'next/image'
-import profilePic from "../../public/images/profile/home-img.JPG"
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 import TransitionEffect from '@/components/TransitionEffect'
-import ParticlesContainer from '@/components/ParticlesContainer'
+import Image from 'next/image'
 
 
 export default function Home() {
