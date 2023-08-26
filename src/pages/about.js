@@ -13,10 +13,11 @@ const about = () => {
     <>
         <Head>
             <title>Idan Hur | About Page</title>
-            <meta name="description" content="Idan Hur - Backend Developer with 
-            expertise in C#, Python, Java, and more. Experienced in Android/Linux 
-            development, software integration, and web development. Explore my resume,
-            projects, and professional journey."/>
+            <meta name="description" content="Learn more about Idan Hur, a dedicated Backend Developer with a passion for innovation. Graduate from Afeka Tel Aviv Academic College of Engineering with expertise in C#, Python, Java, and more." />
+            <meta name="keywords" content="Idan Hur, About, Backend Developer, Software Engineer, Afeka Tel Aviv Academic College, C#, Python, Java, Android, Linux, Machine Learning, AI" />
+            <meta property="og:title" content="About Idan Hur - Backend Developer & Software Engineer" />
+            <meta property="og:description" content="Discover the journey of Idan Hur, a dedicated Backend Developer with a rich background in software engineering, machine learning, and AI." />
+            <meta property="og:url" content="https://www.idan-hur.com/about" />
         </Head>
         <TransitionEffect />
         <main className="flex w-full flex-col items-center justify-center

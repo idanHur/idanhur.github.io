@@ -63,10 +63,11 @@ const projects = () => {
     <>
         <Head>
             <title>Idan Hur | Projects Page</title>
-            <meta name='description' content='Idan Hur - Backend Developer with 
-            expertise in C#, Python, Java, and more. Experienced in Android/Linux 
-            development, software integration, and web development. Explore my resume,
-            projects, and professional journey.'/>
+            <meta name="description" content="Explore Idan Hur's portfolio of technological projects, including the Connect4 Game, Trip Management Application, TV Show Runtime, and Titanic Machine Learning analysis. Dive into the details and discover the passion and expertise behind each creation." />
+            <meta name="keywords" content="Idan Hur, Projects, Connect4 Game, Trip Management Application, TV Show Runtime, Titanic Machine Learning, Kaggle, Python, ASP.NET Core, PostgreSQL, Linux" />
+            <meta property="og:title" content="Idan Hur's Projects - Showcasing Technological Triumphs" />
+            <meta property="og:description" content="A collection of Idan Hur's innovative projects, reflecting a blend of software engineering skills, creativity, and dedication to excellence." />
+            <meta property="og:url" content="https://www.idan-hur.com/projects" />
         </Head>
         <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
