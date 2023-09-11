@@ -7,8 +7,8 @@ import React from 'react'
 import project1 from "../../public/images/projects/Connect4.jpg"
 import project2 from "../../public/images/projects/song-db-management.jpg"
 import project3 from "../../public/images/projects/ProtfolioWebsite.jpg"
-import project4 from "../../public/images/projects/Trip-Management-Application.jpg"
-import project5 from "../../public/images/projects/Real-Time-Demand-Forecasting-in-E-commerce.jpeg"
+import project4 from "../../public/images/projects/Real-Time-Demand-Forecasting-in-E-commerce.jpeg"
+import project5 from "../../public/images/projects/Trip-Management-Application.jpg"
 import project6 from "../../public/images/projects/linux.jpg"
 import project7 from "../../public/images/projects/ML-with-the-Titanic-Dataset.png"
 import { motion } from 'framer-motion'
