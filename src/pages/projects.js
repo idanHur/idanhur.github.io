@@ -5,9 +5,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import project1 from "../../public/images/projects/Connect4.jpg"
-import project2 from "../../public/images/projects/Trip-Management-Application.jpg"
-import project3 from "../../public/images/projects/linux.jpg"
-import project4 from "../../public/images/projects/ML-with-the-Titanic-Dataset.png"
+import project2 from "../../public/images/projects/song-db-management.jpg"
+import project3 from "../../public/images/projects/ProtfolioWebsite.jpg"
+import project4 from "../../public/images/projects/Trip-Management-Application.jpg"
+import project5 from "../../public/images/projects/Real-Time-Demand-Forecasting-in-E-commerce.jpeg"
+import project6 from "../../public/images/projects/linux.jpg"
+import project7 from "../../public/images/projects/ML-with-the-Titanic-Dataset.png"
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import Image from 'next/image'
@@ -88,11 +91,43 @@ const projects = () => {
                     </div>
                     <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         <FeaturedProject 
+                                title="Song Database Management Application"
+                                summary="Crafted a dynamic song management platform using React and Tailwind CSS, powered by a NestJS backend with MySQL integration. 
+                                Deployed and streamlined via Docker for seamless user song search and data handling."
+                                img= {project2}
+                                github="https://github.com/idanHur/song-db-management"
+                                type="Featured Project "
+                        />
+                    </div>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                        <FeaturedProject 
+                                title="Interactive Portfolio Website (You're on it!)"
+                                summary="Crafted this very site you're exploring! Built responsively with Next.js and Tailwind CSS, it's spruced up with mouse-reactive animations, 
+                                showcasing my projects and skills in a lively and interactive style. Dive in and enjoy!"
+                                link="https://www.idan-hur.com/"
+                                img= {project3}
+                                github="https://github.com/idanHur/idanhur.github.io"
+                                type="Featured Project "
+                        />
+                    </div>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                        <FeaturedProject 
+                                title="Real Time Demand Forecasting in E commerce"
+                                summary="Developed a real-time e-commerce data processing system, harnessing the capabilities of Kafka and PySpark to integrate and analyze sales data. 
+                                This solution enabled prompt insights into purchasing patterns and ensured top-tier data quality, critical for subsequent analytical modeling"
+                                link="https://www.canva.com/design/DAFtZjwWe34/Xk9Cnina6ACAMeeHEE_16Q/edit?utm_content=DAFtZjwWe34&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                img= {project4}
+                                github="https://github.com/idanHur/Real-Time-Demand-Forecasting-in-E-commerce"
+                                type="Featured Project "
+                        />
+                    </div>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                        <FeaturedProject 
                                 title="Trip Management Application"
                                 summary="An application that plans a traveling itinerary for the user based on his favorite places on Google maps!
                                 Each route is calculated by the locations of the user's favorite places, and approximately by the time it will take to visit them.
                                 Utilizing PostgreSQL for the relational dataset, RESTful API, CRUD, JUnit tests, and much more!"
-                                img= {project2}
+                                img= {project5}
                                 github="https://github.com/idanHur/Trip-Management-Application"
                                 type="Featured Project "
                         />
@@ -102,11 +137,12 @@ const projects = () => {
                                 title="Tv Show runtime"
                                 summary="Linux application that gets a list of tv shows name and using an HTTP GET request and receives a JSON containing all the episodes of that show and calculates its runtime, 
                                 the application uses parallel computing calls to get each tv show runtime faster and it returns the tv shows with the longest and shortest runtime."
-                                img= {project3}
+                                img= {project6}
                                 github="https://github.com/idanHur/tv-show-runtime"
                                 type="Featured Project "
                         />
                     </div>
+                    
                     <div className='col-span-1 md:col-span-3 lg:col-span-6'>
                         <FeaturedProject 
                                 title="Titanic - Machine Learning from Disaster"
@@ -116,10 +152,12 @@ const projects = () => {
                                 A heatmap was used to visualize correlations between features, providing insights for model optimization. The primary predictive model was Logistic Regression implemented with the SGD Classifier, 
                                 which was fine-tuned to enhance its accuracy."
                                 link="https://www.kaggle.com/competitions/titanic/data"
-                                img= {project4}
+                                img= {project7}
                                 github="https://github.com/idanHur/Titanic/blob/main/Titanic_1.ipynb"
                                 type="Featured Project "
                         />
+                    </div>
+                    <div className='col-span-1 md:col-span-6 lg:col-span-12'>
                     </div>
 
                     <div className='col-span-1 md:col-span-6 lg:col-span-12'>
