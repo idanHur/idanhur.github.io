@@ -38,7 +38,7 @@ export default function Home() {
                   Together, let&apos;s sculpt the future of software, one line of code at a time.
               </p>
               <div className="flex items-center self-center mt-2">
-                <Link href="/Idan Hur.pdf" target="_blank"
+                <Link href="/Idan Hur Backend Engineer.pdf" target="_blank"
                 className="flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
