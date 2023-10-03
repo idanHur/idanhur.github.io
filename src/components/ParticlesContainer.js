@@ -1,3 +1,5 @@
+'use client'
+
 import { distance } from 'framer-motion';
 import React, {useCallback} from 'react'
 import {Particles} from 'react-tsparticles';
