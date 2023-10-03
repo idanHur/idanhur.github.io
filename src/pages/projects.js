@@ -3,7 +3,7 @@ import { GithubIcon } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import project1 from "../../public/images/projects/Connect4.jpg"
 import project2 from "../../public/images/projects/song-db-management.jpg"
 import project3 from "../../public/images/projects/ProtfolioWebsite.jpg"
@@ -16,7 +16,7 @@ import TransitionEffect from '@/components/TransitionEffect'
 import Image from 'next/image'
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
-
+    const [isLoading, setLoading] = useState(true);
     const FramerImage = motion(Image);
 
     return(
@@ -29,13 +29,18 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                 <Link href={link ? link : github} target='_blank'
                 className='w-full lg:w-auto cursor-pointer overflow-hidden rounded-lg mb-4 lg:mb-0'  // Added mb-4 for spacing on small and medium screens
                 >
-                    <FramerImage src={img} alt={title} className='w-full h-auto' 
+                    <FramerImage src={img} alt={title} className={`w-full h-auto ${isLoading ? 'grayscale blur-2xl scale-110' :
+                    'grayscale-0 blur-0 scale-100'}`}
                     whileHover={{scale:1.05}}
                     transition={{duration:0.2}}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
                     priority
                     sizes='(max-width: 768px) 100vw, 
                     (max-width: 1200px) 50vw, 
                     33vw'
+                    onLoadingComplete={() => setLoading(false)}
                     />
                 </Link>
                 <div className='w-full lg:w-auto flex flex-col items-start justify-between lg:pl-6'>

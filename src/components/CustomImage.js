@@ -2,10 +2,9 @@
 
 import Image from 'next/image'
 import React, { memo, useState } from 'react'
-import profilePic from '../../public/images/profile/home-img.jpg'
 
 
-function CustomImage({src, sizes, alt}) {
+function CustomImage({src, className, sizes, alt , whileHover, transition}) {
     const [isLoading, setLoading] = useState(true);
     return (
       <div>
@@ -14,7 +13,9 @@ function CustomImage({src, sizes, alt}) {
                   alt={alt}
                   layout="responsive"
                   priority
-                  className={`
+                  whileHover={whileHover}
+                  transition={transition}
+                  className={`${className}
                   object-cover
                   group-hover:opacity-75
                   duration-700

@@ -7,8 +7,8 @@ import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import TransitionEffect from '@/components/TransitionEffect'
-import Image from 'next/image'
 import CustomImage from '@/components/CustomImage'
+
 const about = () => {
   return (
     <>
