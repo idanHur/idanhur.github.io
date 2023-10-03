@@ -56,9 +56,6 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-        <div className="absolute right-8 bottom-8 lg:inline-block w-24 hidden">
-          <Image src={lightBulb} alt="IdanHur" className="w-full h-auto" />
-        </div>
       </main>
     </>
   )
