@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import {useScroll, motion} from "framer-motion"
 import LiIcon from './LiIcon'
+import {experienceStrings} from "../strings"
 
 const Details =({position, company, companyLink, time, address, work}) => {
         const ref = useRef(null);
@@ -49,16 +50,12 @@ const Experience = () => {
             className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details 
-                position="Junior Android/Linux developer"
-                company="HTVet"
-                time="01/2023 - 05/2023"
-                companyLink="https://www.ht-vet.com/"
-                address="Hod HaSharon, Israel"
-                work="As the lead developer, I developed an Android app integrating UVC cameras and controlling microcontrollers. 
-                I adapted our software for Arch Linux tablets, involving debugging, code adjustments, and creating automation scripts. 
-                I enhanced system performance with automation scripts, managed various packages, and introduced Linux services. 
-                I implemented real-time WebRTC communication in Python for live camera feeds. I also set up a communication framework with microcontrollers via USB. 
-                On the management side, I organized tasks using Monday.com and managed code with GitLab, showcasing my ability to work independently and efficiently."
+                position={`${experienceStrings.experience1Position}`}
+                company={`${experienceStrings.experience1Company}`}
+                time={`${experienceStrings.experience1Time}`}
+                companyLink={`${experienceStrings.experience1CompanyLink}`}
+                address={`${experienceStrings.experience1Address}`}
+                work={`${experienceStrings.experience1Work}`}
                 />
 
             </ul>

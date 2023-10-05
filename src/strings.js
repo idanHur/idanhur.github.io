@@ -63,3 +63,19 @@ export const titanicLink = `https://www.kaggle.com/competitions/titanic/data`;
 export const projectsStrings  = {connect4Title, connect4Summary, connect4Github, songDatabaseTitle, songDatabaseSummary, songDatabaseGithub, portfolioWebsiteTitle, portfolioWebsiteSummary, portfolioWebsiteGithub, portfolioWebsiteLink,
     demandForecastingTitle, demandForecastingSummary, demandForecastingGithub, demandForecastingLink, tripManagementTitle, tripManagementSummary, tripManagementGithub,
     showRuntimeTitle, showRuntimeSummary, showRuntimeGithub, titanicTitle, titanicSummary, titanicGithub, titanicLink};
+
+
+
+export const experience1Position = "Junior Linux developer";
+export const experience1Company = "HTVet";
+export const experience1Time = "01/2023 - 05/2023"
+export const experience1CompanyLink = `https://www.ht-vet.com/`
+export const experience1Address = "Hod HaSharon, Israel";
+export const experience1Work = `As the lead developer, I developed an Android app integrating UVC cameras and controlling microcontrollers. 
+    I adapted our software for Arch Linux tablets, involving debugging, code adjustments, and creating automation scripts. 
+    I enhanced system performance with automation scripts, managed various packages, and introduced Linux services. 
+    I implemented real-time WebRTC communication in Python for live camera feeds. I also set up a communication framework with microcontrollers via USB. 
+    On the management side, I organized tasks using Monday.com and managed code with GitLab, showcasing my ability to work independently and efficiently.`;
+
+export const experienceStrings  = {experience1Position, experience1Company, experience1Time, experience1CompanyLink, experience1Address, experience1Work};
+
