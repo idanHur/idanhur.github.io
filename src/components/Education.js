@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import {useScroll, motion} from "framer-motion"
 import LiIcon from './LiIcon'
+import {educationStrings} from "../strings"
 
 const Details =({type, time, place, info}) => {
         const ref = useRef(null);
@@ -46,15 +47,15 @@ const Education = () => {
             className='absolute left-9 top-0 w-[4px] h-full bg-black dark:bg-light origin-top'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details  
-                    type="B.Sc. in Software Engineering, specialization in Machine Learning and AI."   
-                    place="Afeka Tel Aviv Academic College of Engineering"
-                    time="2019 – 2023"
-                    info="Participant in the SmartUp program for honor students."
+                    type={`${educationStrings.education1Type}`}  
+                    place={`${educationStrings.education1Place}`} 
+                    time={`${educationStrings.education1Time}`} 
+                    info={`${educationStrings.education1Info}`} 
                 />
                 <Details  
-                    type="High school education - Specialized in Electronics and Computers"   
-                    place="Amal Multidisciplinary Sciences and Arts Hadera"
-                    time="2012 – 2015"
+                    type={`${educationStrings.education2Type}`}    
+                    place={`${educationStrings.education2Place}`} 
+                    time={`${educationStrings.education2Time}`} 
                 />   
             </ul>
       </div>

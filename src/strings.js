@@ -79,3 +79,14 @@ export const experience1Work = `As the lead developer, I developed an Android ap
 
 export const experienceStrings  = {experience1Position, experience1Company, experience1Time, experience1CompanyLink, experience1Address, experience1Work};
 
+export const education1Type = "B.Sc. in Software Engineering, specialization in Machine Learning and AI.";
+export const education1Place = "Afeka Tel Aviv Academic College of Engineering";
+export const education1Time = "2019 – 2023";
+export const education1Info = "Participant in the SmartUp program for honor students.";
+
+export const education2Type = "High school education - Specialized in Electronics and Computers";
+export const education2Place = "Amal Multidisciplinary Sciences and Arts Hadera";
+export const education2Time = "2012 – 2015";
+
+export const educationStrings  = {education1Type, education1Place, education1Time, education1Info, education2Type, education2Place, education2Time};
+
