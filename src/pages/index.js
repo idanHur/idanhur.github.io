@@ -3,10 +3,8 @@ import Head from 'next/head'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
-import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 import TransitionEffect from '@/components/TransitionEffect'
-import Image from 'next/image'
-
+import {introStrings} from '../strings'
 
 export default function Home() {
   return (
@@ -29,13 +27,10 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center justify-center w-full">
             
             <div className="w-full px-4 lg:px-0 lg:w-1/2 flex flex-col items-center self-center">
-              <AnimatedText text="Engineering Software Excellence Through Precision and Innovation." 
+              <AnimatedText text={`${introStrings.indexAnimatedText}`}
               className="!text-3xl !text-center md:!text-5xl lg:!text-6xl"/>
               <p className="my-4 text-base font-medium text-center ">
-                  As a dedicated Software Engineer, I harness a rich palette of programming languages, 
-                  frameworks, and tools to breathe life into visionary projects. 
-                  Dive into my extensive portfolio, which mirrors my adeptness in C#, Python, Java, and more. 
-                  Together, let&apos;s sculpt the future of software, one line of code at a time.
+                {introStrings.indexIntro}
               </p>
               <div className="flex items-center self-center mt-2">
                 <Link href="/Idan Hur Backend Engineer.pdf" target="_blank"

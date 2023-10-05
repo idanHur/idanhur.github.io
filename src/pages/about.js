@@ -8,6 +8,7 @@ import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import TransitionEffect from '@/components/TransitionEffect'
 import CustomImage from '@/components/CustomImage'
+import {aboutStrings} from "../strings"
 
 const about = () => {
   return (
@@ -25,17 +26,17 @@ const about = () => {
         dark:text-light 
         ">
             <Layout className="pt-4 md:pt-8 lg:pt-16 ">
-                <AnimatedText text="Passion Fuels Purpose! " className="!text-5xl lg:!text-7xl mb-2 md:mb-16 xl:mb-20 2xl:mb-32"/>
+                <AnimatedText text={`${aboutStrings.aboutAnimatedText}`} className="!text-5xl lg:!text-7xl mb-2 md:mb-16 xl:mb-20 2xl:mb-32"/>
                 <div className="grid w-full grid-cols-1 xl:grid-cols-8 gap-16">
                     <div className="col-span-1 xl:col-span-3 flex flex-col items-start justify-start">
                         <h2 className="mb-4 text-lg font-bold uppercase 
                         text-dark/80 dark:text-light/80 " 
                         >About Me</h2>
                         <p className="font-medium mb-4">
-                            Hello, I&apos;m Idan Hur, a dedicated Backend Developer with a passion for innovation. I graduated Cum Laude from Afeka Tel Aviv Academic College of Engineering, earning a B.Sc. in Software Engineering with a focus on Machine Learning and AI. My expertise encompasses a range of programming languages, including C#, Python, and Java, and I&apos;ve further honed my skills in APIs, databases, and data structures.
+                            {aboutStrings.aboutMeFirstParagraph}
                         </p>
                         <p className="font-medium">
-                            During my time at HtVet, I led development and integration for Android and Linux systems, deepening my understanding of embedded systems. I&apos;m not just technically proficient; I&apos;m a quick learner with a drive to contribute to groundbreaking backend projects. As the tech industry continues to evolve, I&apos;m eager to collaborate with forward-thinking companies and make a lasting impact.
+                            {aboutStrings.aboutMeSecondParagraph}
                         </p>
 
                     </div>
@@ -54,14 +55,14 @@ const about = () => {
                     <div className="col-span-1 xl:col-span-2 flex flex-col items-center xl:items-end justify-between">
                         <div className="flex flex-col items-center xl:items-end justify-center pb-8">
                             <span className="inline-block text-2xl font-bold">
-                                Software Engineering Graduate 
+                                {aboutStrings.aboutImageSideHeading1}
                             </span>
                             <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 ">
-                                GPA 88</h2>
+                                {aboutStrings.aboutImageSideSubHeading1}</h2>
                         </div>
                         <div className="flex flex-col items-center xl:items-end justify-center">
                             <span className="inline-block text-2xl font-bold">
-                                SmartUp program for honor students 
+                                {aboutStrings.aboutImageSideHeading2} 
                             </span>
                             
                         </div>
