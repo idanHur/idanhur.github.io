@@ -1,15 +1,17 @@
-export const indexIntro = `As a dedicated Software Engineer, I harness a rich palette of programming languages, 
+export const indexIntro = `As a dedicated Backend Engineer, I harness a rich palette of programming languages, 
     frameworks, and tools to breathe life into visionary projects. 
     Dive into my extensive portfolio, which mirrors my adeptness in C#, Python, Java, and more. 
-    Together, let&apos;s sculpt the future of software, one line of code at a time.`;
+    Together, let's sculpt the future of software, one line of code at a time.`;
 
 export const indexAnimatedText = "Engineering Software Excellence Through Precision and Innovation.";
 
 export const introStrings  = {indexIntro, indexAnimatedText};
 
 export const aboutAnimatedText = "Passion Fuels Purpose!";
-export const aboutMeFirstParagraph = "Hello, I&apos;m Idan Hur, a dedicated Backend Developer with a passion for innovation. I graduated Cum Laude from Afeka Tel Aviv Academic College of Engineering, earning a B.Sc. in Software Engineering with a focus on Machine Learning and AI. My expertise encompasses a range of programming languages, including C#, Python, and Java, and I&apos;ve further honed my skills in APIs, databases, and data structures.";
-export const aboutMeSecondParagraph = "During my time at HtVet, I led development and integration for Android and Linux systems, deepening my understanding of embedded systems. I&apos;m not just technically proficient; I&apos;m a quick learner with a drive to contribute to groundbreaking backend projects. As the tech industry continues to evolve, I&apos;m eager to collaborate with forward-thinking companies and make a lasting impact.";
+export const aboutMeFirstParagraph = `Hello, I'm Idan Hur, a dedicated Backend engineer specializing in C#, ASP.NET, .NET Core, Docker, and Kubernetes. I enjoy building scalable and microservices-driven backends. 
+    I received my Bachelor's in Software Engineering with a specialization in Machine Learning and AI from Afeka Tel Aviv Academic College of Engineering, where I participated in the "Smart Up" Honors program.`;
+export const aboutMeSecondParagraph = `Besides JavaScript, Python, Java, and Bash, I have experience with web technologies such as React, NextJs, Tailwind, and Bootstrap and databases such as MySQL and PostgreSQL. 
+    Among other things, my recent role involved optimizing WebRTC communication and enhancing system stability. I have also implemented robust and scalable solutions using Apache Kafka and RabbitMQ.`;
 export const aboutImageSideHeading1 ="Software Engineering Graduate ";
 export const aboutImageSideSubHeading1 ="GPA 88 ";
 export const aboutImageSideHeading2 = "SmartUp program for honor students ";
@@ -71,11 +73,13 @@ export const experience1Company = "HTVet";
 export const experience1Time = "01/2023 - 05/2023"
 export const experience1CompanyLink = `https://www.ht-vet.com/`
 export const experience1Address = "Hod HaSharon, Israel";
-export const experience1Work = `As the lead developer, I developed an Android app integrating UVC cameras and controlling microcontrollers. 
-    I adapted our software for Arch Linux tablets, involving debugging, code adjustments, and creating automation scripts. 
-    I enhanced system performance with automation scripts, managed various packages, and introduced Linux services. 
-    I implemented real-time WebRTC communication in Python for live camera feeds. I also set up a communication framework with microcontrollers via USB. 
-    On the management side, I organized tasks using Monday.com and managed code with GitLab, showcasing my ability to work independently and efficiently.`;
+export const experience1Work = `Developed an app integrating UVC cameras with microcontroller
+    controls, optimized for Arch Linux tablets; enhanced Python scripts,
+    debugged software, modified API endpoints, incorporated cv2 camera
+    feeds and developed real-time WebRTC communication using Python.
+    Automated software package management, managed projects with
+    Monday.com, documented in Confluence, and supervised code via
+    GitLab.`;
 
 export const experienceStrings  = {experience1Position, experience1Company, experience1Time, experience1CompanyLink, experience1Address, experience1Work};
 

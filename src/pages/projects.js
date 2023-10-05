@@ -88,7 +88,7 @@ const projects = () => {
                             title={`${projectsStrings.connect4Title}`}
                             summary={`${projectsStrings.connect4Summary}`}
                             img= {project1}
-                            github={`${projectsStrings.connect4github}`}
+                            github={`${projectsStrings.connect4Github}`}
                             type="Featured Project "
                         />
                     </div>
@@ -97,7 +97,7 @@ const projects = () => {
                                 title={`${projectsStrings.songDatabaseTitle}`}
                                 summary={`${projectsStrings.songDatabaseSummary}`}
                                 img= {project2}
-                                github={`${projectsStrings.connect4github}`}
+                                github={`${projectsStrings.songDatabaseGithub}`}
                                 type="Featured Project "
                         />
                     </div>
