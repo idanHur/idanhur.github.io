@@ -4,6 +4,7 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import carAuctionImg from "../../public/images/projects/carAuction.png"
 import project1 from "../../public/images/projects/Connect4.jpg"
 import project2 from "../../public/images/projects/song-db-management.jpg"
 import project3 from "../../public/images/projects/ProtfolioWebsite.jpg"
@@ -21,7 +22,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
     const FramerImage = motion(Image);
 
     return(
-        <article className='w-full flex flex-col items-center justify-center
+        <article className='w-full flex flex-grow flex-col items-center justify-center
         rounded-2xl border border-solid border-dark bg-white relative rounded-br-2xl p-6
         dark:bg-dark dark:text-light dark:border-light'>
         <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] 
@@ -83,7 +84,17 @@ const projects = () => {
             <Layout>
                 <AnimatedText className="!text-4xl lg:!text-6xl mb-8 md:mb-16 " text="Crafted with Passion: A Tour of My Technological Triumphs."/>
                 <div className='grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-24 gap-x-6 md:gap-y-24 lg:gap-x-8 xl:gap-x-16'>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                    
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6 flex flex-col'>
+                        <FeaturedProject 
+                            title={`${projectsStrings.carAuctionTitle}`}
+                            summary={`${projectsStrings.carAuctionSummary}`}
+                            img= {carAuctionImg}
+                            github={`${projectsStrings.carAuctionGithub}`}
+                            type="Featured Project "
+                        />
+                    </div>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6 flex flex-col'>
                         <FeaturedProject 
                             title={`${projectsStrings.connect4Title}`}
                             summary={`${projectsStrings.connect4Summary}`}
@@ -92,7 +103,7 @@ const projects = () => {
                             type="Featured Project "
                         />
                     </div>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6 flex flex-col'>
                         <FeaturedProject 
                                 title={`${projectsStrings.songDatabaseTitle}`}
                                 summary={`${projectsStrings.songDatabaseSummary}`}
@@ -101,7 +112,7 @@ const projects = () => {
                                 type="Featured Project "
                         />
                     </div>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6 flex flex-col'>
                         <FeaturedProject 
                                 title={`${projectsStrings.portfolioWebsiteTitle}`}
                                 summary={`${projectsStrings.portfolioWebsiteSummary}`}
@@ -111,7 +122,7 @@ const projects = () => {
                                 type="Featured Project "
                         />
                     </div>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6 flex flex-col'>
                         <FeaturedProject 
                                 title={`${projectsStrings.demandForecastingTitle}`}
                                 summary={`${projectsStrings.demandForecastingSummary}`}
@@ -121,7 +132,7 @@ const projects = () => {
                                 type="Featured Project "
                         />
                     </div>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6 flex flex-col'>
                         <FeaturedProject 
                                 title={`${projectsStrings.tripManagementTitle}`}
                                 summary={`${projectsStrings.tripManagementSummary}`}
@@ -130,7 +141,7 @@ const projects = () => {
                                 type="Featured Project "
                         />
                     </div>
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6 flex flex-col'>
                         <FeaturedProject 
                                 title={`${projectsStrings.showRuntimeTitle}`}
                                 summary={`${projectsStrings.showRuntimeSummary}`}
@@ -140,7 +151,7 @@ const projects = () => {
                         />
                     </div>
                     
-                    <div className='col-span-1 md:col-span-3 lg:col-span-6'>
+                    <div className='col-span-1 md:col-span-3 lg:col-span-6 flex flex-col'>
                         <FeaturedProject 
                                 title={`${projectsStrings.titanicTitle}`}
                                 summary={`${projectsStrings.titanicSummary}`}
@@ -150,6 +161,7 @@ const projects = () => {
                                 type="Featured Project "
                         />
                     </div>
+
                     <div className='col-span-1 md:col-span-6 lg:col-span-12'>
                     </div>
 

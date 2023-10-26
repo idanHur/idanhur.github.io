@@ -62,9 +62,17 @@ export const titanicSummary = `The 'Titanic - Machine Learning from Disaster' pr
 export const titanicGithub = `https://github.com/idanHur/Titanic/blob/main/Titanic_1.ipynb`;
 export const titanicLink = `https://www.kaggle.com/competitions/titanic/data`;
 
+export const carAuctionTitle = "Car auction site";
+export const carAuctionSummary = `Using .NET Core, the Car Auction Site boasts a robust microservices architecture, encompassing auction management, 
+    real-time bidding, and user authentication, all enhanced with Docker containerization and RabbitMQ messaging. On the frontend, built with Next.js, 
+    users experience seamless navigation, efficient state management via Zustand, real-time updates through SignalR, and secured interactions with NextAuth. Together, 
+    this platform offers a comprehensive and modern car auction experience.`;
+export const carAuctionGithub = `https://github.com/idanHur/Car-Auction-Site`;
+
+
 export const projectsStrings  = {connect4Title, connect4Summary, connect4Github, songDatabaseTitle, songDatabaseSummary, songDatabaseGithub, portfolioWebsiteTitle, portfolioWebsiteSummary, portfolioWebsiteGithub, portfolioWebsiteLink,
     demandForecastingTitle, demandForecastingSummary, demandForecastingGithub, demandForecastingLink, tripManagementTitle, tripManagementSummary, tripManagementGithub,
-    showRuntimeTitle, showRuntimeSummary, showRuntimeGithub, titanicTitle, titanicSummary, titanicGithub, titanicLink};
+    showRuntimeTitle, showRuntimeSummary, showRuntimeGithub, titanicTitle, titanicSummary, titanicGithub, titanicLink, carAuctionTitle, carAuctionSummary, carAuctionGithub};
 
 
 
