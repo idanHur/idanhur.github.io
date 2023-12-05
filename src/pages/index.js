@@ -16,6 +16,22 @@ export default function Home() {
         <meta property="og:title" content="Idan Hur - Backend Developer & Software Engineer" />
         <meta property="og:description" content="Idan Hur, a dedicated Software Engineer specializing in backend development. Dive into my extensive portfolio and let's sculpt the future of software together." />
         <meta property="og:url" content="https://www.idan-hur.com" /> 
+        
+        <script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=G-NFY8RVK2J0" 
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-NFY8RVK2J0');
+            `,
+          }}
+        />
       </Head>
       
       <TransitionEffect />
