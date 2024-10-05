@@ -13,7 +13,7 @@ export const aboutMeFirstParagraph = `Hello, I'm Idan Hur, a dedicated Backend e
 export const aboutMeSecondParagraph = `Besides JavaScript, Python, Java, and Bash, I have experience with web technologies such as React, NextJs, Tailwind, and Bootstrap and databases such as MySQL and PostgreSQL. 
     Among other things, my recent role involved optimizing WebRTC communication and enhancing system stability. I have also implemented robust and scalable solutions using Apache Kafka and RabbitMQ.`;
 export const aboutImageSideHeading1 ="Software Engineering Graduate ";
-export const aboutImageSideSubHeading1 ="GPA 88 ";
+export const aboutImageSideSubHeading1 ="GPA 89";
 export const aboutImageSideHeading2 = "SmartUp program for honor students ";
 
 export const aboutStrings  = {aboutAnimatedText, aboutMeFirstParagraph, aboutMeSecondParagraph, aboutImageSideHeading1, aboutImageSideSubHeading1, aboutImageSideHeading2};
@@ -76,7 +76,7 @@ export const projectsStrings  = {connect4Title, connect4Summary, connect4Github,
 
 
 
-export const experience1Position = "Junior Linux developer";
+export const experience1Position = "Software Developer";
 export const experience1Company = "HTVet";
 export const experience1Time = "01/2023 - 05/2023"
 export const experience1CompanyLink = `https://www.ht-vet.com/`
@@ -90,6 +90,20 @@ export const experience1Work = `Developed an app integrating UVC cameras with mi
     GitLab.`;
 
 export const experienceStrings  = {experience1Position, experience1Company, experience1Time, experience1CompanyLink, experience1Address, experience1Work};
+
+export const experienceMeggerPosition = "Software Engineer";
+export const experienceMeggerCompany = "Megger";
+export const experienceMeggerTime = "12/2023 - Present"
+export const experienceMeggerCompanyLink = `https://www.megger.com/en`
+export const experienceMeggerAddress = "Natanya, Israel";
+export const experienceMeggerWork = `Contributed to the development and support of secure RESTful API 
+    backend services in .NET 6, implementing JWT, OAuth 2.0, and role-based access control to ensure secure data access. 
+    Additionally, maintained and optimized backend services in .NET Framework 4.8 using Entity Framework and asynchronous programming, 
+    improving IoT data processing and enhancing SQL Server storage efficiency. 
+    Refactored production testers in .NET Framework 4.8 with Entity Framework and MySQL, 
+    reducing test times through asynchronous operations and improving calibration accuracy with advanced statistical methods.`;
+
+export const experienceMeggerStrings  = {experienceMeggerPosition, experienceMeggerCompany, experienceMeggerTime, experienceMeggerCompanyLink, experienceMeggerAddress, experienceMeggerWork};
 
 export const education1Type = "B.Sc. in Software Engineering, specialization in Machine Learning and AI.";
 export const education1Place = "Afeka Tel Aviv Academic College of Engineering";

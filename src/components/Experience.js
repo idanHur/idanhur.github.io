@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import {useScroll, motion} from "framer-motion"
 import LiIcon from './LiIcon'
-import {experienceStrings} from "../strings"
+import {experienceStrings, experienceMeggerStrings} from "../strings"
 
 const Details =({position, company, companyLink, time, address, work}) => {
         const ref = useRef(null);
@@ -50,6 +50,14 @@ const Experience = () => {
             className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details 
+                position={`${experienceMeggerStrings.experienceMeggerPosition}`}
+                company={`${experienceMeggerStrings.experienceMeggerCompany}`}
+                time={`${experienceMeggerStrings.experienceMeggerTime}`}
+                companyLink={`${experienceMeggerStrings.experienceMeggerCompanyLink}`}
+                address={`${experienceMeggerStrings.experienceMeggerAddress}`}
+                work={`${experienceMeggerStrings.experienceMeggerWork}`}
+                />
+                <Details 
                 position={`${experienceStrings.experience1Position}`}
                 company={`${experienceStrings.experience1Company}`}
                 time={`${experienceStrings.experience1Time}`}
@@ -57,7 +65,6 @@ const Experience = () => {
                 address={`${experienceStrings.experience1Address}`}
                 work={`${experienceStrings.experience1Work}`}
                 />
-
             </ul>
       </div>
       
