@@ -48,8 +48,6 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
-          # This line automatically sets 'output: "export"' in next.config.js and other adjustments for GitHub Pages.
-          # Remove it if you want to manage next.config.js manually.
           static_site_generator: next
 
       - name: Restore cache
@@ -64,11 +62,18 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      # 1) Just do 'next build'. No 'next export' step needed anymore.
+      # Only run the build command. Do NOT run `next export` separately.
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
-      # 2) Upload the out/ folder. Next.js will automatically create ./out if 'output: export' is set in next.config.js
+      # (Optional) Debug step: list the contents of the current directory.
+      - name: List directory contents
+        run: ls -al
+
+      # (Optional) Debug step: list the contents of the 'out' folder if it exists.
+      - name: List out folder
+        run: ls -al out || echo "No out folder found"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
