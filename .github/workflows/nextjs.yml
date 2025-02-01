@@ -62,9 +62,11 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      # Run the build. With static export enabled, this should create the "out" folder.
-      - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      # Build and export the static site.
+      - name: Build and Export with Next.js
+        run: |
+          ${{ steps.detect-package-manager.outputs.runner }} next build
+          ${{ steps.detect-package-manager.outputs.runner }} next export
 
       # Debug: List contents of the current directory.
       - name: List current directory
@@ -78,6 +80,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+          artifact_name: github-pages
 
   deploy:
     environment:
