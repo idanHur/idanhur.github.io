@@ -50,7 +50,7 @@ const Experience = () => {
             className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details 
-                    position={`${experienceMeggerStrings.experienceMeggerPosition}`}
+                    position={`${experienceMeggerStrings.experienceMeggerPosition2}`}
                     company={`${experienceMeggerStrings.experienceMeggerCompany}`}
                     time={`${experienceMeggerStrings.experienceMeggerTime2}`}
                     companyLink={`${experienceMeggerStrings.experienceMeggerCompanyLink}`}
