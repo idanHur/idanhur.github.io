@@ -50,20 +50,28 @@ const Experience = () => {
             className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details 
-                position={`${experienceMeggerStrings.experienceMeggerPosition}`}
-                company={`${experienceMeggerStrings.experienceMeggerCompany}`}
-                time={`${experienceMeggerStrings.experienceMeggerTime}`}
-                companyLink={`${experienceMeggerStrings.experienceMeggerCompanyLink}`}
-                address={`${experienceMeggerStrings.experienceMeggerAddress}`}
-                work={`${experienceMeggerStrings.experienceMeggerWork}`}
+                    position={`${experienceMeggerStrings.experienceMeggerPosition}`}
+                    company={`${experienceMeggerStrings.experienceMeggerCompany}`}
+                    time={`${experienceMeggerStrings.experienceMeggerTime2}`}
+                    companyLink={`${experienceMeggerStrings.experienceMeggerCompanyLink}`}
+                    address={`${experienceMeggerStrings.experienceMeggerAddress}`}
+                    work={`${experienceMeggerStrings.experienceMeggerWork2}`}
                 />
                 <Details 
-                position={`${experienceStrings.experience1Position}`}
-                company={`${experienceStrings.experience1Company}`}
-                time={`${experienceStrings.experience1Time}`}
-                companyLink={`${experienceStrings.experience1CompanyLink}`}
-                address={`${experienceStrings.experience1Address}`}
-                work={`${experienceStrings.experience1Work}`}
+                    position={`${experienceMeggerStrings.experienceMeggerPosition}`}
+                    company={`${experienceMeggerStrings.experienceMeggerCompany}`}
+                    time={`${experienceMeggerStrings.experienceMeggerTime}`}
+                    companyLink={`${experienceMeggerStrings.experienceMeggerCompanyLink}`}
+                    address={`${experienceMeggerStrings.experienceMeggerAddress}`}
+                    work={`${experienceMeggerStrings.experienceMeggerWork}`}
+                />
+                <Details 
+                    position={`${experienceStrings.experience1Position}`}
+                    company={`${experienceStrings.experience1Company}`}
+                    time={`${experienceStrings.experience1Time}`}
+                    companyLink={`${experienceStrings.experience1CompanyLink}`}
+                    address={`${experienceStrings.experience1Address}`}
+                    work={`${experienceStrings.experience1Work}`}
                 />
             </ul>
       </div>

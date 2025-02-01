@@ -93,7 +93,7 @@ export const experienceStrings  = {experience1Position, experience1Company, expe
 
 export const experienceMeggerPosition = "Software Engineer";
 export const experienceMeggerCompany = "Megger";
-export const experienceMeggerTime = "12/2023 - Present"
+export const experienceMeggerTime = "12/2023 - 12/2024"
 export const experienceMeggerCompanyLink = `https://www.megger.com/en`
 export const experienceMeggerAddress = "Natanya, Israel";
 export const experienceMeggerWork = `Contributed to the development and support of secure RESTful API 
@@ -103,7 +103,13 @@ export const experienceMeggerWork = `Contributed to the development and support 
     Refactored production testers in .NET Framework 4.8 with Entity Framework and MySQL, 
     reducing test times through asynchronous operations and improving calibration accuracy with advanced statistical methods.`;
 
-export const experienceMeggerStrings  = {experienceMeggerPosition, experienceMeggerCompany, experienceMeggerTime, experienceMeggerCompanyLink, experienceMeggerAddress, experienceMeggerWork};
+export const experienceMeggerTime2 = "12/2024 - Present"
+export const experienceMeggerWork2 = `Develop and maintain a full-stack system with a .NET 6 backend and a React frontend, 
+    supported by a SQL Server database. Contributions include implementing Entity Framework migrations with data seeding 
+    for streamlined database versioning and service installation. Additionally, upgraded the React application from version 16 to 18, 
+    ensuring compatibility and improved performance. Responsible for delivering new features, fixing bugs, and optimizing system performance to meet evolving business needs.`
+
+export const experienceMeggerStrings  = {experienceMeggerWork2, experienceMeggerTime2, experienceMeggerPosition, experienceMeggerCompany, experienceMeggerTime, experienceMeggerCompanyLink, experienceMeggerAddress, experienceMeggerWork};
 
 export const education1Type = "B.Sc. in Software Engineering, specialization in Machine Learning and AI.";
 export const education1Place = "Afeka Tel Aviv Academic College of Engineering";
