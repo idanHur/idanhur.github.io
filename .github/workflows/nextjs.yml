@@ -66,20 +66,20 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
-
-      # Debug: List contents of the current directory.
+      # Debug: List current directory.
       - name: List current directory
         run: ls -al
 
-      # Debug: List contents of the "out" folder (if it exists).
+      # Debug: List contents of the "out" folder.
       - name: List out folder
         run: ls -al out || echo "No out folder found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out/_next
-          artifact_name: github-pages
+          path: ./out
+          name: github-pages
+          retention-days: 1
 
   deploy:
     environment:
