@@ -78,7 +78,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./idanhur.github.io/out
+          path: ./out/_next
           artifact_name: github-pages
 
   deploy:
