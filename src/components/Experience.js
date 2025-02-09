@@ -65,14 +65,14 @@ const Experience = () => {
                     address={`${experienceMeggerStrings.experienceMeggerAddress}`}
                     work={`${experienceMeggerStrings.experienceMeggerWork}`}
                 />
-                <Details 
+                {/*<Details 
                     position={`${experienceStrings.experience1Position}`}
                     company={`${experienceStrings.experience1Company}`}
                     time={`${experienceStrings.experience1Time}`}
                     companyLink={`${experienceStrings.experience1CompanyLink}`}
                     address={`${experienceStrings.experience1Address}`}
                     work={`${experienceStrings.experience1Work}`}
-                />
+                />*/}
             </ul>
       </div>
       
