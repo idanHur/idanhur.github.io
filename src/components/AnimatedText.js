@@ -14,7 +14,7 @@ const quote ={
     }
 }
 
-const singelWord ={
+const singleWord ={
     initial:{
         opacity:0,
         y:50,
@@ -42,7 +42,7 @@ const AnimatedText = ({text, className=""}) => {
         {
             text.split(" ").map((word, index) =>
             <motion.span key={word+'-'+index} className='inline-block'
-            variants={singelWord}
+            variants={singleWord}
             >
                 {word}&nbsp;
             </motion.span>
