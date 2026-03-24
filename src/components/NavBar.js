@@ -85,14 +85,14 @@ const NavBar = () => {
         </nav>
 
         <nav className='flex items-center justify-center flex-wrap'>
-          <motion.a href='https://www.linkedin.com/in/idan-hur/' target={"_blank"}
+          <motion.a href='https://www.linkedin.com/in/idan-hur/' target={"_blank"} rel="noopener noreferrer"
           className='w-6 mr-3'
           whileHover={{y:-2 }}
           whileTap={{scale:0.9}}
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a href='https://github.com/idanHur' target={"_blank"} className='w-6 ml-3'
+          <motion.a href='https://github.com/idanHur' target={"_blank"} rel="noopener noreferrer" className='w-6 ml-3'
           whileHover={{y:-2 }}
           whileTap={{scale:0.9}}
           >
@@ -129,14 +129,14 @@ const NavBar = () => {
         </nav>
 
         <nav className='flex items-center justify-center flex-wrap mt-2'>
-          <motion.a href='https://www.linkedin.com/in/idan-hur/' target={"_blank"}
+          <motion.a href='https://www.linkedin.com/in/idan-hur/' target={"_blank"} rel="noopener noreferrer"
           className='w-6 mr-3'
           whileHover={{y:-2 }}
           whileTap={{scale:0.9}}
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a href='https://github.com/idanHur' target={"_blank"} className='w-6 ml-3 bg-light rounded-full dark:bg-dark'
+          <motion.a href='https://github.com/idanHur' target={"_blank"} rel="noopener noreferrer" className='w-6 ml-3 bg-light rounded-full dark:bg-dark'
           whileHover={{y:-2 }}
           whileTap={{scale:0.9}}
           >
