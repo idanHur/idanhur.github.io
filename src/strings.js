@@ -1,17 +1,17 @@
-export const indexIntro = `As a dedicated Backend Engineer, I harness a rich palette of programming languages, 
-    frameworks, and tools to breathe life into visionary projects. 
-    Dive into my extensive portfolio, which mirrors my adeptness in C#, Python, Java, and more. 
-    Together, let's sculpt the future of software, one line of code at a time.`;
+export const indexIntro = `Backend engineer with 2+ years building production systems for critical infrastructure — from power-grid IoT monitoring to AI-powered fault detection.
+    Specializing in C# and .NET, with strong experience in REST API design, cloud-native architectures, and modernizing legacy systems.
+    Explore my portfolio to see how I turn complex challenges into reliable, scalable solutions.`;
 
 export const indexAnimatedText = "Engineering Software Excellence Through Precision and Innovation.";
 
 export const introStrings  = {indexIntro, indexAnimatedText};
 
 export const aboutAnimatedText = "Passion Fuels Purpose!";
-export const aboutMeFirstParagraph = `Hello, I'm Idan Hur, a dedicated Backend engineer specializing in C#, ASP.NET, .NET Core, Docker, and Kubernetes. I enjoy building scalable and microservices-driven backends. 
+export const aboutMeFirstParagraph = `Hello, I'm Idan Hur, a Backend Engineer with 2+ years building and maintaining production systems for critical infrastructure — power-grid IoT monitoring used by electric utilities across intercity networks.
+    I specialize in C# and .NET, with strong experience in REST API design, authentication, cloud-native architectures, and modernizing legacy systems under live production constraints.
     I received my Bachelor's in Software Engineering with a specialization in Machine Learning and AI from Afeka Tel Aviv Academic College of Engineering, where I participated in the "Smart Up" Honors program.`;
-export const aboutMeSecondParagraph = `Besides JavaScript, Python, Java, and Bash, I have experience with web technologies such as React, NextJs, Tailwind, and Bootstrap and databases such as MySQL and PostgreSQL. 
-    Among other things, my recent role involved optimizing WebRTC communication and enhancing system stability. I have also implemented robust and scalable solutions using Apache Kafka and RabbitMQ.`;
+export const aboutMeSecondParagraph = `Beyond C#, I work with JavaScript, TypeScript, Python, Java, and Bash, along with web technologies like React, Next.js, Tailwind, and Bootstrap, and databases including PostgreSQL, MongoDB, MySQL, and SQL Server.
+    In my current role, I've built an AI-powered fault detection feature end-to-end and led a full-stack framework migration on a live SaaS platform with zero incidents. I also design event-driven systems using RabbitMQ and Kafka.`;
 export const aboutImageSideHeading1 ="Software Engineering Graduate ";
 export const aboutImageSideSubHeading1 ="GPA 89";
 export const aboutImageSideHeading2 = "SmartUp program for honor students ";
@@ -62,11 +62,9 @@ export const titanicSummary = `The 'Titanic - Machine Learning from Disaster' pr
 export const titanicGithub = `https://github.com/idanHur/Titanic/blob/main/Titanic_1.ipynb`;
 export const titanicLink = `https://www.kaggle.com/competitions/titanic/data`;
 
-export const carAuctionTitle = "Car auction site";
-export const carAuctionSummary = `Using .NET Core, the Car Auction Site boasts a robust microservices architecture, encompassing auction management, 
-    real-time bidding, and user authentication, all enhanced with Docker containerization and RabbitMQ messaging. On the frontend, built with Next.js, 
-    users experience seamless navigation, efficient state management via Zustand, real-time updates through SignalR, and secured interactions with NextAuth. Together, 
-    this platform offers a comprehensive and modern car auction experience.`;
+export const carAuctionTitle = "Distributed Car Auction Platform";
+export const carAuctionSummary = `Architected 5-6 independent microservices using .NET Core with PostgreSQL, MongoDB, RabbitMQ, and Kafka for async messaging and event-driven communication.
+    Implemented production-grade auth (OAuth 2.0, IdentityServer) and real-time updates via SignalR; deployed on Kubernetes with API gateway and reverse proxy (YARP), and a Next.js frontend.`;
 export const carAuctionGithub = `https://github.com/idanHur/Car-Auction-Site`;
 
 
@@ -96,19 +94,16 @@ export const experienceMeggerCompany = "Megger";
 export const experienceMeggerTime = "12/2023 - 12/2024"
 export const experienceMeggerCompanyLink = `https://www.megger.com/en`
 export const experienceMeggerAddress = "Natanya, Israel";
-export const experienceMeggerWork = `Contributed to the development and support of secure RESTful API 
-    backend services in .NET 6, implementing JWT, OAuth 2.0, and role-based access control to ensure secure data access. 
-    Additionally, maintained and optimized backend services in .NET Framework 4.8 using Entity Framework and asynchronous programming, 
-    improving IoT data processing and enhancing SQL Server storage efficiency. 
-    Refactored production testers in .NET Framework 4.8 with Entity Framework and MySQL, 
-    reducing test times through asynchronous operations and improving calibration accuracy with advanced statistical methods.`;
+export const experienceMeggerWork = `Cut device calibration test time from 23 min to 14 min by rewriting synchronous test workflows as async in .NET Framework 4.8; also resolved recurring hardware communication failures causing multiple test restarts per day.
+    Eliminated manual SQL Server update steps by implementing Entity Framework migrations — significantly reducing deployment time and removing a recurring source of human error.
+    Built a fully functional Docker containerization POC for the production backend as a self-initiated project, demonstrating a viable path to containerized deployments.`;
 
-export const experienceMeggerPosition2 = "Fullstack Engineer";
+export const experienceMeggerPosition2 = "Fullstack Engineer (Backend-focused)";
 export const experienceMeggerTime2 = "12/2024 - Present"
-export const experienceMeggerWork2 = `Develop and maintain a full-stack system with a .NET 6 backend and a React frontend, 
-    supported by a SQL Server database. Contributions include implementing Entity Framework migrations with data seeding 
-    for streamlined database versioning and service installation. Additionally, upgraded the React application from version 16 to 18, 
-    ensuring compatibility and improved performance. Responsible for delivering new features, fixing bugs, and optimizing system performance to meet evolving business needs.`
+export const experienceMeggerWork2 = `Built an AI-powered fault detection feature end-to-end: integrated ML model output via API, implemented fault classification logic and grid section identification, and delivered site-wide frontend and backend changes.
+    Led a full-stack framework migration (.NET 6 to .NET 9, React 16 to 18) on a live SaaS platform serving electric utilities — zero production incidents through rigorous staged testing.
+    Designed and secured REST APIs using JWT, OAuth 2.0, and role-based access control for an IoT platform monitoring fault detection across intercity power-grid infrastructure.
+    Stabilized a React frontend with accumulated technical debt: untangled machine-specific local dependencies to make the build fully reproducible and resolved pre-existing runtime errors.`
 
 export const experienceMeggerStrings  = {experienceMeggerPosition2, experienceMeggerWork2, experienceMeggerTime2, experienceMeggerPosition, experienceMeggerCompany, experienceMeggerTime, experienceMeggerCompanyLink, experienceMeggerAddress, experienceMeggerWork};
 

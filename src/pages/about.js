@@ -15,10 +15,10 @@ const about = () => {
     <>
         <Head>
             <title>Idan Hur | About Page</title>
-            <meta name="description" content="Learn more about Idan Hur, a dedicated Backend Developer with a passion for innovation. Graduate from Afeka Tel Aviv Academic College of Engineering with expertise in C#, Python, Java, and more." />
-            <meta name="keywords" content="Idan Hur, About, Backend Developer, Software Engineer, Afeka Tel Aviv Academic College, C#, Python, Java, Android, Linux, Machine Learning, AI" />
-            <meta property="og:title" content="About Idan Hur - Backend Developer & Software Engineer" />
-            <meta property="og:description" content="Discover the journey of Idan Hur, a dedicated Backend Developer with a rich background in software engineering, machine learning, and AI." />
+            <meta name="description" content="Learn more about Idan Hur, a Backend Engineer with 2+ years building production systems for critical infrastructure. Specializing in C#, .NET, and cloud-native architectures." />
+            <meta name="keywords" content="Idan Hur, About, Backend Engineer, C#, .NET, ASP.NET Core, Docker, Kubernetes, REST API, Microservices, Afeka Tel Aviv Academic College, Machine Learning, AI" />
+            <meta property="og:title" content="About Idan Hur - Backend Engineer" />
+            <meta property="og:description" content="Discover the journey of Idan Hur, a Backend Engineer building production systems for critical infrastructure with C#, .NET, and cloud-native architectures." />
             <meta property="og:url" content="https://www.idan-hur.com/about" />
         </Head>
         <TransitionEffect />
