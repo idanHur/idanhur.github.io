@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         
-        <Link href="mailto:idan12060@gmail.com" target='_blank' className='underline underline-offset-2'>
+        <Link href="mailto:idan12060@gmail.com" target='_blank' rel='noopener noreferrer' className='underline underline-offset-2'>
           Say Hello
         </Link>
       </div>

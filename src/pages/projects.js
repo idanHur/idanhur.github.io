@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 import carAuctionImg from "../../public/images/projects/carAuction.png"
 import project1 from "../../public/images/projects/Connect4.jpg"
 import project2 from "../../public/images/projects/song-db-management.jpg"
-import project3 from "../../public/images/projects/ProtfolioWebsite.jpg"
+import project3 from "../../public/images/projects/PortfolioWebsite.jpg"
 import project4 from "../../public/images/projects/Real-Time-Demand-Forecasting-in-E-commerce.jpeg"
 import project5 from "../../public/images/projects/Trip-Management-Application.jpg"
 import project6 from "../../public/images/projects/linux.jpg"
@@ -28,7 +28,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
         <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] 
         bg-dark rounded-br-3xl dark:bg-light' />
             <div className='w-full flex flex-col lg:flex-row items-center justify-start'>
-                <Link href={link ? link : github} target='_blank'
+                <Link href={link ? link : github} target='_blank' rel='noopener noreferrer'
                 className='w-full lg:w-auto cursor-pointer overflow-hidden rounded-lg mb-4 lg:mb-0'  // Added mb-4 for spacing on small and medium screens
                 >
                     <FramerImage src={img} alt={title} className={`w-full h-auto ${isLoading ? 'grayscale blur-2xl scale-110' :
@@ -47,7 +47,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                 </Link>
                 <div className='w-full lg:w-auto flex flex-col items-start justify-between lg:pl-6'>
                     <span className='text-primary font-medium text-xl dark:text-primaryDark'>{type}</span>
-                    <Link href={link ? link : github} target='_blank' 
+                    <Link href={link ? link : github} target='_blank' rel='noopener noreferrer' 
                     className='hover:underline underline-offset-2'>
                         <h2 className='my-1 lg:my-2 w-full text-left text-2xl lg:text-4xl font-bold dark:text-light'>{title}</h2>
                     </Link>
@@ -56,8 +56,8 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
             <p className='my-2 font-medium text-dark dark:text-light'>{summary}</p>
             <div className='mt-2 flex items-center'>
-                <Link href={github} target='_blank' className='w-10'><GithubIcon /></Link>
-                {link && <Link href={link} target='_blank' 
+                <Link href={github} target='_blank' rel='noopener noreferrer' className='w-10'><GithubIcon /></Link>
+                {link && <Link href={link} target='_blank' rel='noopener noreferrer' 
                 className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
                 dark:bg-light dark:text-dark'
                 >Visit project</Link>}

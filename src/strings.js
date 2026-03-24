@@ -44,13 +44,13 @@ export const demandForecastingLink = `https://www.canva.com/design/DAFtZjwWe34/X
 
 export const tripManagementTitle = "Trip Management Application";
 export const tripManagementSummary = `An application that plans a traveling itinerary for the user based on his favorite places on Google maps!
-    Each route is calculated by the locations of the user's favorite places, and approximately by the time it will take to visit them.
+    Each route is calculated by the locations of the user's favorite places, and approximately how long it will take to visit them.
     Utilizing PostgreSQL for the relational dataset, RESTful API, CRUD, JUnit tests, and much more!`;
 export const tripManagementGithub = `https://github.com/idanHur/Trip-Management-Application`;
 
-export const showRuntimeTitle = "Tv Show runtime";
-export const showRuntimeSummary = `Linux application that gets a list of tv shows name and using an HTTP GET request and receives a JSON containing all the episodes of that show and calculates its runtime, 
-    the application uses parallel computing calls to get each tv show runtime faster and it returns the tv shows with the longest and shortest runtime.`;
+export const showRuntimeTitle = "TV Show Runtime";
+export const showRuntimeSummary = `Linux application that gets a list of TV show names and using an HTTP GET request receives a JSON containing all the episodes of that show and calculates its runtime.
+    The application uses parallel computing calls to get each TV show runtime faster and returns the TV shows with the longest and shortest runtime.`;
 export const showRuntimeGithub = `https://github.com/idanHur/tv-show-runtime`;
 
 export const titanicTitle = "Titanic - Machine Learning from Disaster";
