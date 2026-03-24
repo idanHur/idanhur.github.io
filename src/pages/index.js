@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <Head>
         <title>Idan Hur</title>
-        <meta name="description" content="Idan Hur, a dedicated Software Engineer specializing in backend development. Proficient in C#, Python, Java, and more. Explore my portfolio and get in touch for collaboration." />
-        <meta name="keywords" content="Idan Hur, Software Engineer, Backend Developer, C#, Python, Java, .NET, OOP, Spring, MVC, MySQL, PostgreSQL, WebRTC, Android, Linux, Machine Learning, AI" />
-        <meta property="og:title" content="Idan Hur - Backend Developer & Software Engineer" />
-        <meta property="og:description" content="Idan Hur, a dedicated Software Engineer specializing in backend development. Dive into my extensive portfolio and let's sculpt the future of software together." />
+        <meta name="description" content="Idan Hur, Backend Engineer with 2+ years building production systems for critical infrastructure. Specializing in C#, .NET, REST APIs, and cloud-native architectures." />
+        <meta name="keywords" content="Idan Hur, Backend Engineer, C#, .NET, ASP.NET Core, REST API, Microservices, Docker, Kubernetes, OAuth 2.0, JWT, PostgreSQL, MongoDB, RabbitMQ, Kafka, React, Machine Learning, AI" />
+        <meta property="og:title" content="Idan Hur - Backend Engineer" />
+        <meta property="og:description" content="Idan Hur, Backend Engineer specializing in C# and .NET. Building production systems for critical infrastructure with REST APIs, cloud-native architectures, and microservices." />
         <meta property="og:url" content="https://www.idan-hur.com" /> 
         
         <script 
